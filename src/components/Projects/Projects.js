@@ -32,7 +32,7 @@ function Projects() {
               isBlog={false}
               title="Open AI Application (Copymatic) | Frontend (MERN)"
               description="I design the frontend of Open AI application to generate the Automatic blog and content, such as Copymatic and Chat Gpt, use Tailwind Css with glass morphism effects, Mobile Responsive, and eye-catchy."
-              // ghLink="https://github.com/Jibran220/Web-3.0-Project"
+          
               demoLink="https://dribbble.com/shots/20956454-Open-AI-Application-Copymatic-Frontend-MERN"
             />
           </Col>
@@ -43,7 +43,7 @@ function Projects() {
               isBlog={false}
               title=" Project Management, SAAS Application | Full Stack (MERN)"
               description="I design both frontend and backend using cloud database (mongodb), RFQ will generate whichwill be invited to vendors to get their Quotes, different profile section for them and for the higher-Committee, the Data is Authenticated and Safe."
-              // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              
                demoLink="http://54.37.6.229:3000/"
             />
           </Col>
@@ -53,8 +53,8 @@ function Projects() {
               imgPath={as}
               isBlog={false}
               title="Job Finding | Mobile App (Cross Platform) | React Native"
-              description="I made the Job Finding app in React Native. Jobs are listed from Rapid API, Users can selectand apply for jobs by joining their respective websites from the app."
-              ghLink="https://github.com/Jibran220/React-Native-Jobs"
+              description="I made the Job Finding app in React Native. Jobs are listed from Rapid API, Users can select and apply for jobs by joining their respective websites from the app."
+              ghLink="https://github.com/Jibrand/React-Native-Jobs-Application"
               demoLink="https://dribbble.com/shots/11867493-Job-finder-Mobile-UI-Job-list"              
             />
           </Col>
@@ -65,7 +65,7 @@ function Projects() {
               isBlog={false}
               title="Blockchain Cryptocurrency App | Web 3.0"
               description="I made the Blockchain (Web 3.0) application through which we can send Ethereum to any Blockchain Address and charge the Gas Price, against each transaction, also record all of the transactions with a unique gif."
-              ghLink="https://github.com/Jibran220/Web-3.0-Project"
+              ghLink="https://github.com/Jibrand/Web-3.0"
               demoLink="https://mykryptc.netlify.app/"
             />
           </Col>
@@ -76,7 +76,7 @@ function Projects() {
               isBlog={false}
               title="Tons of Web & desktop Applications"
               description="I built tons of websites with the passage of time, with Different Programming Languages and With other Platforms such as using MERN Stack, WordPress, Wix, and Shopify, interacting with many databases such as Mongo Db, Firebase, Ms. SQL Server, My SQL, etc."
-              ghLink="https://github.com/jibran220"
+              ghLink="https://github.com/Jibrand"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
