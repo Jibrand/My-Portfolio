@@ -30,58 +30,58 @@ function Techstack() {
 
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiReact className="ml-12"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiNextdotjs className="ml-12"  />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
+        <DiNodejs className="ml-12"/>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiExpress className="ml-12" />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <IoLogoFirebase />
+        <DiMongodb className="ml-12"/>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <IoLogoFirebase className="ml-12"/>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiCplusplus />
+        <DiPython className="ml-12" />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiCplusplus className="ml-12" />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithubactions />
+        <DiJavascript1 className="ml-12" />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiCsharp />
+        <SiGithubactions  className="ml-12"/>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCsharp className="ml-12" />
       </Col> 
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftsqlserver />
+        <SiMicrosoftsqlserver className="ml-12"/>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiDotnet />
+        <SiDotnet className="ml-12" />
       </Col>
 
     <Col xs={4} md={2} className="tech-icons">
-        <SiWordpress />
+        <SiWordpress className="ml-12" />
       </Col>
 
      
@@ -92,7 +92,7 @@ function Techstack() {
      
   
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <DiGit className="ml-12"/>
       </Col>
      
     </Row>

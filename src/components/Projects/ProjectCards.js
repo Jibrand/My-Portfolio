@@ -7,21 +7,25 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-<Card.Img 
-    variant="top" 
-    src={props.imgPath} 
-    alt="card-img"
-    style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '50%' }}
-/>
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt="card-img"
+        style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: '50%' }}
+      />
 
       <Card.Body>
-        <Card.Title style={{   fontWeight:"bold" , color:"#975b1a"}}>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify", fontSize:"15px" }}>
+        <Card.Title style={{ fontWeight: "bold", color: "#975b1a" }}>{props.title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify", fontSize: "15px" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+        <Button
+          href="https://github.com/Jibrand"
+          target="_blank"
+          className="fork-btn-inner"
+        >
+          <BsGithub style={{ fontSize: "1.2em" }} />{" "}
+
         </Button>
         {"\n"}
         {"\n"}
@@ -29,15 +33,16 @@ function ProjectCards(props) {
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         {!props.isBlog && props.demoLink && (
+
           <Button
-            variant="primary"
-            href={props.demoLink}
+            href="https://github.com/Jibrand"
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            className="fork-btn-inner ml-4"
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            DEMO
+
           </Button>
+
         )}
       </Card.Body>
     </Card>
