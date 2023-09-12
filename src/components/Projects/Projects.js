@@ -13,6 +13,13 @@ import saas from '../../Assets/saas.jpg'
 import as from '../../Assets/as.png'
 import as2 from '../../Assets/2.png'
 import as3 from '../../Assets/3.jpg'
+import as4 from '../../Assets/shooinn.PNG'
+import as5 from '../../Assets/p1.jpg'
+import as6 from '../../Assets/p2.PNG'
+import as7 from '../../Assets/p3.PNG'
+import as8 from '../../Assets/p5.PNG'
+import as9 from '../../Assets/p7.png'
+import as10 from '../../Assets/p11.png'
 
 function Projects() {
   return (
@@ -50,6 +57,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={as10}
+              isBlog={false}
+              title="Crypto Wallet |  MERN Stack, Web3.js --[[Under development Process]]"
+              description="I've developed a Web 3.0 blockchain application using the MERN stack and integrated web3.js for blockchain transactions"
+              ghLink="https://github.com/Jibrand/Crypto-Wallet"
+              demoLink="https://magical-twilight-b5e924.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={as}
               isBlog={false}
               title="Job Finding | Mobile App (Cross Platform) | React Native"
@@ -69,6 +87,74 @@ function Projects() {
               demoLink="https://mykryptc.netlify.app/"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as4}
+              isBlog={false}
+              title="Shooinndmv |  Best Sneaker Seller"
+              description=" It is the Ecommerce website of Sneaker, Which offer high-quality sneakers and shoes, including the latest trends and timeless classics, to meet your footwear needs."
+              ghLink="https://github.com/Jibrand/"
+              demoLink="https://shooinndmv.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as5}
+              isBlog={false}
+              title="Ecommerce Website |  Asp.Net MVC"
+              description="I've developed an ASP.NET and MS SQL Server e-commerce website for furniture, featuring comprehensive CRUD operations for seamless management."
+              ghLink="https://github.com/Jibrand/Online-Shop-Asp.Net"
+              demoLink="https://www.youtube.com/watch?v=Ucc3mgK4mFc&t=7s"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as6}
+              isBlog={false}
+              title="Pavilion Mart | Desktop Application [C#]"
+              description="I've created a C# desktop application for a supermarket, functioning as a shopping cart and billing software, utilizing MS SQL Server for data management."
+              ghLink="https://github.com/Jibrand/Pavilion-Mart-CSharp"
+              demoLink="https://www.youtube.com/watch?v=69lIBl2GBmE&t=26s"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as7}
+              isBlog={false}
+              title="Point Of Sale | Desktop Application [C#]"
+              description="I've created a C# desktop application for The Business to Store their Ledger and Stock, functioning as a Point Of Sale Software, utilizing MS SQL Server for data management."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://www.youtube.com/watch?v=Ki4zuaZgKWY"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as8}
+              isBlog={false}
+              title="Hotel Management Software | Desktop Application [C#]"
+              description="I've created a C# desktop application for The Business to Store their Hotal Data and The Customer Data, functioning as a Management Software."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://www.youtube.com/watch?v=Ki4zuaZgKWY"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as9}
+              isBlog={false}
+              title="Education Management Software | Web Application [HTML, CSS, JQuery]"
+              description="I've created a Web application for The Education for admission and tracking all the data of students, functioning as a Education Management Software."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://www.youtube.com/watch?v=Ki4zuaZgKWY"
+            />
+          </Col>
+
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
