@@ -20,7 +20,7 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <Button
-          href="https://github.com/Jibrand"
+            href={props.ghLink}
           target="_blank"
           className="fork-btn-inner"
         >
@@ -35,7 +35,7 @@ function ProjectCards(props) {
         {!props.isBlog && props.demoLink && (
 
           <Button
-            href="https://github.com/Jibrand"
+            href={props.demoLink}
             target="_blank"
             className="fork-btn-inner ml-4"
           >

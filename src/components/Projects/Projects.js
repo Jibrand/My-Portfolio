@@ -32,8 +32,8 @@ function Projects() {
               isBlog={false}
               title="Open AI Application (Copymatic) | Frontend (MERN)"
               description="I design the frontend of Open AI application to generate the Automatic blog and content, such as Copymatic and Chat Gpt, use Tailwind Css with glass morphism effects, Mobile Responsive, and eye-catchy."
-          
-              demoLink="https://dribbble.com/shots/20956454-Open-AI-Application-Copymatic-Frontend-MERN"
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://dribbble.com/shots/22527970-Open-AI-Application-Copymatic-Frontend-MERN"
             />
           </Col>
 
@@ -43,8 +43,8 @@ function Projects() {
               isBlog={false}
               title=" Project Management, SAAS Application | Full Stack (MERN)"
               description="I design both frontend and backend using cloud database (mongodb), RFQ will generate whichwill be invited to vendors to get their Quotes, different profile section for them and for the higher-Committee, the Data is Authenticated and Safe."
-              
-               demoLink="http://54.37.6.229:3000/"
+               ghLink="https://github.com/Jibrand/SAAS-Bussiness-Application-FRONTEND"
+              //  demoLink="http://54.37.6.229:3000/"
             />
           </Col>
 
@@ -53,9 +53,9 @@ function Projects() {
               imgPath={as}
               isBlog={false}
               title="Job Finding | Mobile App (Cross Platform) | React Native"
-              description="I made the Job Finding app in React Native. Jobs are listed from Rapid API, Users can select and apply for jobs by joining their respective websites from the app."
+              description="I made the Job Finding app in React Native. Jobs are listed from Rapid API, Users can selectand apply for jobs by joining their respective websites from the app."
               ghLink="https://github.com/Jibrand/React-Native-Jobs-Application"
-              demoLink="https://dribbble.com/shots/11867493-Job-finder-Mobile-UI-Job-list"              
+              demoLink="https://dribbble.com/shots/22528015-Job-Finding-Mobile-App-Cross-Platform-React-Native"              
             />
           </Col>
 
@@ -76,7 +76,7 @@ function Projects() {
               isBlog={false}
               title="Tons of Web & desktop Applications"
               description="I built tons of websites with the passage of time, with Different Programming Languages and With other Platforms such as using MERN Stack, WordPress, Wix, and Shopify, interacting with many databases such as Mongo Db, Firebase, Ms. SQL Server, My SQL, etc."
-              ghLink="https://github.com/Jibrand"
+              ghLink="https://github.com/jibran220"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
@@ -87,3 +87,4 @@ function Projects() {
 }
 
 export default Projects;
+  
