@@ -18,8 +18,10 @@ import as5 from '../../Assets/p1.jpg'
 import as6 from '../../Assets/p2.PNG'
 import as7 from '../../Assets/p3.PNG'
 import as8 from '../../Assets/p5.PNG'
+import as89 from '../../Assets/po.jpg'
 import as9 from '../../Assets/p7.png'
 import as10 from '../../Assets/p11.png'
+import as11 from '../../Assets/p13.png'
 
 function Projects() {
   return (
@@ -68,6 +70,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={as11}
+              isBlog={false}
+              title="Digital Marketing Agency | Next.js"
+              description="Recently, I completed the development of a sophisticated website for our digital marketing agency, showcasing our expertise and services"
+              ghLink="https://github.com/Jibrand/My-Agency"
+              demoLink="https://webtose.netlify.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={as}
               isBlog={false}
               title="Job Finding | Mobile App (Cross Platform) | React Native"
@@ -92,7 +105,7 @@ function Projects() {
             <ProjectCard
               imgPath={as4}
               isBlog={false}
-              title="Shooinndmv |  Best Sneaker Seller"
+              title="Shooinndmv |  Best Sneaker Seller [WordPress]"
               description=" It is the Ecommerce website of Sneaker, Which offer high-quality sneakers and shoes, including the latest trends and timeless classics, to meet your footwear needs."
               ghLink="https://github.com/Jibrand/"
               demoLink="https://shooinndmv.com/"
@@ -140,6 +153,17 @@ function Projects() {
               description="I've created a C# desktop application for The Business to Store their Hotal Data and The Customer Data, functioning as a Management Software."
               ghLink="https://github.com/Jibrand"
               demoLink="https://www.youtube.com/watch?v=Ki4zuaZgKWY"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as89}
+              isBlog={false}
+              title="Bookeeping Accounting Website | Manage the Accounts [WordPress]"
+              description="I've successfully created a comprehensive bookkeeping and accounting website, simplifying financial management for businesses and individuals alike."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://superiorsums.com/"
             />
           </Col>
 
