@@ -33,7 +33,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/MhJibran"
+                href="https://twitter.com/jibrandevm"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -43,7 +43,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                           href="https://www.linkedin.com/in/muhammad-jibran-45447720b/"
+                           href="https://www.linkedin.com/in/muhammad-jibran220/"
 
                 style={{ color: "white" }}
                 target="_blank" 
@@ -54,7 +54,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/jibrandev890/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
