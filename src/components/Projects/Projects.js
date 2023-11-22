@@ -200,7 +200,7 @@ function Projects() {
             <ProjectCard
               imgPath={as3}
               isBlog={false}
-              title="Tons of Web & desktop Applications"
+              title="Tonsssss of Web & desktop Applications"
               description="Built tons of websites with the passage of time, with Different Programming Languages and With other Platforms such as using MERN Stack, WordPress, Wix, and Shopify, interacting with many databases such as Mongo Db, Firebase, Ms. SQL Server, My SQL, etc."
               ghLink="https://github.com/jibrand"
             />
