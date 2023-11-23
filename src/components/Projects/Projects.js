@@ -37,18 +37,9 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-         
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={cont}
-              isBlog={false}
-              title="Open AI Application (Copymatic) | Frontend (MERN)"
-              description="Designed the frontend of Open AI application to generate the Automatic blog and content, such as Copymatic and Chat Gpt, use Tailwind Css with glass morphism effects, Mobile Responsive, and eye-catchy."
-              ghLink="https://github.com/Jibrand"
-              demoLink="https://dribbble.com/shots/22527970-Open-AI-Application-Copymatic-Frontend-MERN"
-            />
-          </Col>
+
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -83,16 +74,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={as}
-              isBlog={false}
-              title="Job Finding | Mobile App (Cross Platform) | React Native"
-              description="Made the Job Finding app in React Native. Jobs are listed from Rapid API, Users can selectand apply for jobs by joining their respective websites from the app."
-              ghLink="https://github.com/Jibrand/React-Native-Jobs-Application"
-              demoLink="https://dribbble.com/shots/22528015-Job-Finding-Mobile-App-Cross-Platform-React-Native"
-            />
-          </Col>
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -115,7 +97,7 @@ function Projects() {
             />
           </Col>
 
-          
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -194,13 +176,31 @@ function Projects() {
             />
           </Col>
 
-
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as}
+              isBlog={false}
+              title="Job Finding | Mobile App (Cross Platform) | React Native"
+              description="Made the Job Finding app in React Native. Jobs are listed from Rapid API, Users can selectand apply for jobs by joining their respective websites from the app."
+              ghLink="https://github.com/Jibrand/React-Native-Jobs-Application"
+              demoLink="https://dribbble.com/shots/22528015-Job-Finding-Mobile-App-Cross-Platform-React-Native"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cont}
+              isBlog={false}
+              title="Open AI Application (Copymatic) | Frontend (MERN)"
+              description="Designed the frontend of Open AI application to generate the Automatic blog and content, such as Copymatic and Chat Gpt, use Tailwind Css with glass morphism effects, Mobile Responsive, and eye-catchy."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://dribbble.com/shots/22527970-Open-AI-Application-Copymatic-Frontend-MERN"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={as3}
               isBlog={false}
-              title="Tonsssss of Web & desktop Applications"
+              title="Tons of Web & desktop Applications"
               description="Built tons of websites with the passage of time, with Different Programming Languages and With other Platforms such as using MERN Stack, WordPress, Wix, and Shopify, interacting with many databases such as Mongo Db, Firebase, Ms. SQL Server, My SQL, etc."
               ghLink="https://github.com/jibrand"
             />

@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Pay from "./components/Home/Pay"
+import OpenAi from "./components/Picture/OpenAi";
 import {
   BrowserRouter as Router,
   Route,
@@ -42,6 +43,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/homepay" element={<Pay />} />
+          <Route path="/OpenAi" element={<OpenAi />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
