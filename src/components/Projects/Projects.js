@@ -23,6 +23,8 @@ import as9 from '../../Assets/p7.png'
 import as10 from '../../Assets/p11.png'
 import as11 from '../../Assets/p13.png'
 import as12 from '../../Assets/A.PNG'
+import IK_Agency from '../../Assets/ikAgency.PNG'
+import AVM from '../../Assets/AMN.PNG'
 
 function Projects() {
   return (
@@ -39,7 +41,29 @@ function Projects() {
 
 
 
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={IK_Agency}
+              isBlog={false}
+              title="Digital Marketing Website with Interior Design Niche"
+              description="Explore the cutting-edge digital marketing solutions tailored for the interior design niche. Elevate your brand, captivate audiences, and drive success in the competitive world of interior design with our specialized strategies and expertise."
+              ghLink="https://github.com/Jibrand"
+             demoLink="https://theikagency.com/"
+            />
+          </Col>
 
+         
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={as10}
+              isBlog={false}
+              title="Crypto Wallet |  MERN Stack, Web3.js --[[Under development Process]]"
+              description="I've developed a Web 3.0 blockchain application using the MERN stack and integrated web3.js for blockchain transactions"
+              ghLink="https://github.com/Jibrand/Crypto-Wallet"
+              demoLink="https://magical-twilight-b5e924.netlify.app/"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -54,12 +78,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={as10}
+              imgPath={AVM}
               isBlog={false}
-              title="Crypto Wallet |  MERN Stack, Web3.js --[[Under development Process]]"
-              description="I've developed a Web 3.0 blockchain application using the MERN stack and integrated web3.js for blockchain transactions"
-              ghLink="https://github.com/Jibrand/Crypto-Wallet"
-              demoLink="https://magical-twilight-b5e924.netlify.app/"
+              title="Digital Maketing Project for AVM Marketing"
+              description="Wrapped up the  digital marketing  website development for AVM, highlighting THE expertise and services with finesse."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://avmmarketing.netlify.app/"
             />
           </Col>
 
@@ -112,6 +136,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={as89}
+              isBlog={false}
+              title="Bookeeping Accounting Website | Manage the Accounts [WordPress]"
+              description="Successfully created a comprehensive bookkeeping and accounting website, simplifying financial management for businesses and individuals alike."
+              ghLink="https://github.com/Jibrand"
+              demoLink="https://superiorsums.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={as5}
               isBlog={false}
               title="Ecommerce Website |  Asp.Net MVC"
@@ -154,16 +189,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={as89}
-              isBlog={false}
-              title="Bookeeping Accounting Website | Manage the Accounts [WordPress]"
-              description="Successfully created a comprehensive bookkeeping and accounting website, simplifying financial management for businesses and individuals alike."
-              ghLink="https://github.com/Jibrand"
-              demoLink="https://superiorsums.com/"
-            />
-          </Col>
+        
 
           <Col md={4} className="project-card">
             <ProjectCard
