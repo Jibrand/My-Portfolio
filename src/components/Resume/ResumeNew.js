@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/CV.pdf";
+import pdf from "../../Assets/Muhammad_Jibran_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -26,7 +26,7 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            Download CV
+            Download Resume
           </Button>
         </Row>
 
@@ -36,18 +36,9 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        <Row className="resume" style={{marginTop:"-85px"}}>
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={2} scale={1.2}  className="pdf-page"/>
-          </Document>
-        </Row>
+       
 
-        <Row className="resume" style={{marginTop:"-85px"}}>
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={3} scale={1.2}  className="pdf-page"/>
-          </Document>
-        </Row>
-
+       
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -55,7 +46,7 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            Download CV
+            Download Resume
           </Button>
         </Row>
       </Container>
