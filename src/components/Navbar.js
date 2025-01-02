@@ -75,7 +75,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-             
+              
                 Projects
               </Nav.Link>
             </Nav.Item>
