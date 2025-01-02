@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
+import ProjectCards from "./ProjectCardss";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
@@ -25,6 +26,18 @@ import as11 from '../../Assets/p13.png'
 import as12 from '../../Assets/A.PNG'
 import IK_Agency from '../../Assets/ikAgency.PNG'
 import AVM from '../../Assets/AMN.PNG'
+import Reddit from '../../Assets/Reddit.png'
+import Argocd from '../../Assets/argocd.png'
+import multisyage from '../../Assets/multisyage.png'
+import docker from '../../Assets/docker.png'
+import dockerGA from '../../Assets/dockerGA.png'
+import GA from '../../Assets/GA.png'
+import Serverless from '../../Assets/Serverless.png'
+import gitlab from '../../Assets/gitlab.png'
+import naws from '../../Assets/naws.png'
+import KUBE from '../../Assets/KUBE.png'
+import GenieEngage from '../../Assets/GenieEngage.png'
+import contactless from '../../Assets/contactless.png'
 
 function Projects() {
   return (
@@ -38,21 +51,159 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={Reddit}
+              isBlog={false}
+              title="Redit-Clone-Deployment-with-Kubernetes"
+              description="Frontend-only Reddit clone deployed on Kubernetes. Features React-based responsive UI and scalable, declarative configurations using Kubernetes."
+              ghLink="https://github.com/Jibrand/Redit-Clone-Deployment-with-Kubernetes"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={Argocd}
+              isBlog={false}
+              title="Application-Deploy-on-Kubernetes-with-ArgoCD"
+              description="A MERN app deployment project using Kubernetes and GitOps with ArgoCD. Automates scaling and management while adhering to modern CI/CD practices."
+              ghLink="https://github.com/Jibrand/Application-Deploy-on-Kubernetes-with-ArgoCD"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={multisyage}
+              isBlog={false}
+              title="Multi-Stage-Deployment-with-Terraform"
+              description="Multi-stage deployment using Terraform for AWS infrastructure. Automates Dev, Stage, and Prod environments with S3, EC2, and DynamoDB. Scalable, efficient, and modular."
+              ghLink="https://github.com/Jibrand/Multi-Stage-Deployment-with-Terraform"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={docker}
+              isBlog={false}
+              title="3-Tier-Application-CI-CD-with-Docker-Jenkins"
+              description="Efficient CI/CD pipeline for 3-tier applications using Jenkins, Docker, and Kubernetes. Automates building, testing, and deploying applications with monitoring and feedback mechanisms."
+              ghLink="https://github.com/Jibrand/3-Tier-Application-CI-CD-with-Docker-Jenkins"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={Serverless}
+              isBlog={false}
+              title="Serverless-Application-Using-AWS-Lambda-DynamoDB"
+              description="A professional CRUD API built with AWS Lambda, Node.js, and DynamoDB. It supports Create, Read, Update, and Delete operations."
+              ghLink="https://github.com/Jibrand/Serverless-Application-Using-AWS-Lambda-DynamoDB"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={gitlab}
+              isBlog={false}
+              title="3-Tier-CICD-using-Gitlab"
+              description="This project demonstrates the end-to-end deployment pipeline of a MERN stack application with CI/CD automation using GitLab CI, and deployment on AWS EC2"
+              ghLink="https://github.com/Jibrand/3-Tier-CICD-using-Gitlab"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={naws}
+              isBlog={false}
+              title="Nodejs-AWS-CRUD-App-with-RDS-S3-and-Jenkins-Pipelines"
+              description="This repository contains a complete DevOps project with a CI/CD pipeline built using Jenkins, Docker, AWS RDS, and EC2, featuring automated deployments and continuous integration for a Node.js application."
+              ghLink="https://github.com/Jibrand/Nodejs-AWS-CRUD-App-with-RDS-S3-and-Jenkins-Pipelines"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={dockerGA}
+              isBlog={false}
+              title="3-Tier-Application-CI-CD-Pipeline-with-Docker-and-GitHub-Actions"
+              description="Efficient CI/CD pipeline for deploying 3-tier applications with GitHub Actions and Docker. Automates the lifecycle from code changes to production deployment on EC2."
+              ghLink="https://github.com/Jibrand/3-Tier-Application-CI-CD-Pipeline-with-Docker-and-GitHub-Actions"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={GA}
+              isBlog={false}
+              title="3-Tier-Application-CICD-with-Github-Actions"
+              description="Automate CI/CD for MERN applications with GitHub Actions and deploy on AWS EC2 using an Application Load Balancer. A complete guide to scalable full-stack deployment."
+              ghLink="https://github.com/Jibrand/3-Tier-Application-CICD-with-Github-Actions"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={KUBE}
+              isBlog={false}
+              title="3-Tier-Application-Deployment-with-Kubernetes"
+              description="A full-stack MERN application deployed using Kubernetes, Docker, ECR, and Load Balancer for a scalable 3-tier architecture."
+              ghLink="https://github.com/Jibrand/3-Tier-Application-Deployment-with-Kubernetes"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={GenieEngage}
+              isBlog={false}
+              title="GenieEngage"
+              description="GenieEngage allows you to easily fetch, categorize, and summarize all your video comments in real-time, helping you make data-driven decisions."
+              ghLink="https://github.com/Jibrand/ViteLandingPageGenieEngage"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={contactless}
+              isBlog={false}
+              title="ContactLess Menu System Project"
+              description="A MERN stack Contactless Menu System enabling seamless digital menu browsing and ordering. Designed for efficiency, security, and user convenience, revolutionizing dining experiences with modern, touch-free technology."
+              demoLink="https://theindiankitchen.netlify.app/65cbd73ece5c8ad3601e2573"
+            />
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
 
 
-        <Col md={4} className="project-card">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={IK_Agency}
               isBlog={false}
               title="Digital Marketing Website with Interior Design Niche"
               description="Explore the cutting-edge digital marketing solutions tailored for the interior design niche. Elevate your brand, captivate audiences, and drive success in the competitive world of interior design with our specialized strategies and expertise."
               ghLink="https://github.com/Jibrand"
-             demoLink="https://theikagency.com/"
+              demoLink="https://theikagency.com/"
             />
           </Col>
 
-         
+
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -189,7 +340,7 @@ function Projects() {
             />
           </Col>
 
-        
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -232,6 +383,9 @@ function Projects() {
             />
           </Col>
         </Row>
+
+    
+
       </Container>
     </Container>
   );

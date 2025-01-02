@@ -8,6 +8,8 @@ import {
   SiHeroku,
   SiVercel,
 } from "react-icons/si";
+import { AiFillGitlab } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 function Toolstack() {
   return (
@@ -23,6 +25,12 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel className="ml-12"/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <AiFillGitlab  className="ml-12"/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <AiFillGithub   className="ml-12"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiHeroku className="ml-12"/>

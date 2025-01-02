@@ -1,4 +1,3 @@
- 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/1.png";
@@ -23,28 +22,25 @@ function Home2() {
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C#, Javascript and WordPress. </b>
-              </i>
               <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+              My field of interests are building new &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                  Deep Learning, Natural Language Processing, and Generative AI.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I am skilled in both <b className="purple">Full Stack Development</b> and <b className="purple">DevOps</b> practices. I focus on <b className="purple">secure development</b> while leveraging cutting-edge technologies like <b className="purple">Google Cloud</b> and <b className="purple">Agile methodologies</b>.
+              <br />
+              <br />
+              Whenever possible, I apply my passion for developing products with <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Framework
+                  Modern JavaScript Libraries and Frameworks
                 </b>
               </i>
               &nbsp; like
@@ -53,6 +49,9 @@ function Home2() {
                 <b className="purple"> Next.js</b>
                 <b className="purple"> Redux</b>
               </i>
+              <br />
+              <br />
+              I was honored to serve as the <b className="purple">Google DSC Web Lead'24 @MAJU</b> and am actively engaged in guiding students to enhance their web development skills.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

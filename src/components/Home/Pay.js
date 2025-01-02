@@ -27,7 +27,7 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
               <p><b>Number :  </b> 03308138077</p>
-              <p><b>Email : </b>: jibranjibran220@gmail.com</p>
+              <p><b>Email : </b>: muhammadjibrandev@gmail.com</p>
               <p><b>This site is owned and operated by Muhammad Jibran</b></p>
                 <Type />
               </div>
