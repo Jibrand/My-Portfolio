@@ -23,6 +23,10 @@ function Home2() {
               something, I think… 🤷‍♂️
               <br />
               <br />
+           
+              I am skilled in both <b className="purple">DevOps</b> and <b className="purple">Full Stack Development</b> practices. I focus on <b className="purple">secure development</b> while leveraging cutting-edge technologies like <b className="purple">AWS Cloud</b> and <b className="purple">Agile methodologies</b>.
+              <br />
+              <br />
               My field of interests are building new &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
@@ -31,9 +35,6 @@ function Home2() {
                   Deep Learning, Natural Language Processing, and Generative AI.
                 </b>
               </i>
-              <br />
-              <br />
-              I am skilled in both <b className="purple">Full Stack Development</b> and <b className="purple">DevOps</b> practices. I focus on <b className="purple">secure development</b> while leveraging cutting-edge technologies like <b className="purple">Google Cloud</b> and <b className="purple">Agile methodologies</b>.
               <br />
               <br />
               Whenever possible, I apply my passion for developing products with <b className="purple">Node.js</b> and
