@@ -1,0 +1,162 @@
+.meeting-screenshots-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom left, rgb(27, 20, 41), rgb(20, 15, 35));
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+.meeting-hero-section {
+  position: relative;
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.meeting-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meeting-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.meeting-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  margin: 0;
+}
+
+.carousel-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+}
+
+.carousel-container {
+  display: flex;
+  width: fit-content;
+  animation: scroll 50s linear infinite;
+  will-change: transform;
+}
+
+.carousel-wrapper:hover .carousel-container {
+  animation-play-state: paused;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.carousel-item {
+  position: relative;
+  flex-shrink: 0;
+  width: 500px;
+  height: 375px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-item:hover {
+  transform: scale(1.02);
+}
+
+.screenshot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.loading-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 20px;
+  min-width: 100vw;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(226, 120, 21, 0.2);
+  border-top-color: #e27815;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .meeting-title {
+    font-size: 2rem;
+  }
+
+  .meeting-subtitle {
+    font-size: 1rem;
+  }
+
+  .carousel-item {
+    width: 350px;
+    height: 263px;
+  }
+
+  .carousel-track {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meeting-title {
+    font-size: 1.75rem;
+  }
+
+  .carousel-item {
+    width: 280px;
+    height: 210px;
+  }
+}

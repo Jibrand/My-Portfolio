@@ -19,6 +19,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home3 from "./components/Home/Home3";
+import MeetingScreenshots from "./components/MeetingScreenshots/MeetingScreenshots";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -44,6 +45,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/homepay" element={<Pay />} />
           <Route path="/OpenAi" element={<OpenAi />} />
+          <Route path="/meetings" element={<MeetingScreenshots />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

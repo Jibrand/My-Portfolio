@@ -13,6 +13,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { BsCameraVideo } from "react-icons/bs";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -77,6 +78,16 @@ function NavBar() {
               >
               
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/meetings"
+                onClick={() => updateExpanded(false)}
+              >
+                Meetings
               </Nav.Link>
             </Nav.Item>
 
