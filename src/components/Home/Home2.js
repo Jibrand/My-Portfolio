@@ -75,7 +75,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub className="ml-[10px] mt-[9px]" />
+                  <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
@@ -85,7 +85,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter className="ml-[10px] mt-[9px]" />
+                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
@@ -95,7 +95,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn  className="ml-[10px] mt-[9px]"/>
+                  <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
@@ -105,7 +105,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram  className="ml-[10px] mt-[9px]"/>
+                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

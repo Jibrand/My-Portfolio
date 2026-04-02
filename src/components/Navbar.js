@@ -56,7 +56,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-             Home
+                Home
               </Nav.Link>
             </Nav.Item>
 
@@ -66,7 +66,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-               About
+                About
               </Nav.Link>
             </Nav.Item>
 
@@ -76,12 +76,12 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-              
+
                 Projects
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/meetings"
@@ -89,7 +89,7 @@ function NavBar() {
               >
                 Meetings
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             {/* <Nav.Item>
               <Nav.Link
@@ -100,9 +100,9 @@ function NavBar() {
     Resume
               </Nav.Link>
             </Nav.Item> */}
-         
 
-           
+
+
 
             <Nav.Item className="fork-btn">
               <Button
@@ -111,7 +111,7 @@ function NavBar() {
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-           
+
               </Button>
             </Nav.Item>
           </Nav>

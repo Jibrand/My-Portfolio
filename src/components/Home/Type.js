@@ -1,22 +1,16 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <Typewriter
-      options={{
-        strings: [
-          "DevOps Engineer",
-          "Gen AI Developer",
-          "Full Stack Developer",
-          "Secured Coder 😎",
-          "Open Source Contributor",
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 100,
+    <span
+      style={{
+        fontSize: "2.2em",
+        color: "#e0730c",
+        fontWeight: 600,
       }}
-    />
+    >
+      Full Stack Developer &nbsp;|&nbsp; DevOps Engineer &nbsp;|&nbsp; Gen AI Developer
+    </span>
   );
 }
 
