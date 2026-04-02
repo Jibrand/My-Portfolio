@@ -42,21 +42,21 @@ import LibraryMS from '../../Assets/asp.png'
 import ChairBookedDashboard from '../../Assets/chairbooked-dashboard.png'
 import InboxHRDashboard from '../../Assets/inboxhr.png'
 import PlutioDashboard from '../../Assets/plutio.png'
-import OcorpAILogo from '../../Assets/ocorpai-logo.png'
+import OcorpAILogo from '../../Assets/OCORP.png'
 import YTCommentsAuto from '../../Assets/ytautomate.png'
 import PrivacyGuardPG from '../../Assets/PG.png'
-import LiveStockLogo from '../../Assets/livestock-logo.png'
-import AiBankerLogo from '../../Assets/aibanker.png'
-import MernPOSLogo from '../../Assets/mernpos.svg'
-import PostRightLogo from '../../Assets/postright.svg'
-import CloudSecurityLogo from '../../Assets/cloudsecurity.svg'
+import LiveStockLogo from '../../Assets/LSC.png'
+import AiBankerLogo from '../../Assets/aiBankerr.png'
+import MernPOSLogo from '../../Assets/mernpos.png'
+import PostRightLogo from '../../Assets/PR.png'
+import CloudSecurityLogo from '../../Assets/CSB.png'
 import Story2SleepLogo from '../../Assets/story2sleep.svg'
-import ZaynaLogo from '../../Assets/zayna-logo.png'
-import EmailAutomationLogo from '../../Assets/email-automation-logo.png'
-import SalesGuardLogo from '../../Assets/salesguard-logo.jpg'
-import ToolsTalkLogo from '../../Assets/toolstalk-logo.ico'
-import EduJourneyLogo from '../../Assets/edujourney-logo.png'
-import V3CNLogo from '../../Assets/v3cn-logo.png'
+import ZaynaLogo from '../../Assets/zayna.png'
+import EmailAutomationLogo from '../../Assets/EA.png'
+import SalesGuardLogo from '../../Assets/SG.png'
+import ToolsTalkLogo from '../../Assets/TT.png'
+import EduJourneyLogo from '../../Assets/EJ.png'
+import V3CNLogo from '../../Assets/v3cn.png'
 
 const projectsData = [
   {
@@ -235,6 +235,36 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={ChairBookedDashboard}
+              isBlog={false}
+              title="ChairBooked | AI Chatbot & CRM Platform"
+              description="A comprehensive SaaS platform for local service businesses (plumbers, heating engineers) featuring 24/7 AI website chatbot for appointment booking, automated email status updates, review collection automation, win-back campaigns, and a powerful CRM dashboard. Increases client bookings by 10-15/month. Built with React, MongoDB, Node.js deployed on Vercel."
+              ghLink="https://github.com/Jibrand/chairbooked"
+              demoLink="https://chair-booked.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={InboxHRDashboard}
+              isBlog={false}
+              title="InboxHR | AI-Powered HR Management Platform"
+              description="An enterprise SaaS platform automating HR operations with AI-powered 24/7 employee chatbot, policy management automation, employee onboarding, Zoho integration, bulk CSV import, real-time analytics, and enterprise security. Streamlines HR workflows and reduces manual tasks while improving employee support."
+              demoLink="https://inboxhr.cloud/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={PlutioDashboard}
+              isBlog={false}
+              title="Plutio Voice Action Assistant | Desktop App Voice Control"
+              description="A hands-free voice command system for Plutio's desktop app featuring on-screen voice widget, speech processing, and real-time status notifications. Records voice commands and automatically triggers actions in the background for seamless voice-powered productivity."
+              demoLink="https://drive.google.com/file/d/1swit7bEHdtBxDbvxnCgyRXbso_L2X2ts/view?usp=sharing"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCards
@@ -265,7 +295,25 @@ function Projects() {
               ghLink="https://github.com/Jibrand/Multi-Stage-Deployment-with-Terraform"
             />
           </Col>
+ <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={OcorpAILogo}
+              isBlog={false}
+              title="OcorpAI | AI-Powered Automotive Design Sketch Evaluator"
+              description="An intelligent AI platform for evaluating automotive exterior design sketches with professional design perspective. Features advanced sketch analysis, design intent assessment, and real-time AI feedback. Users upload sketches to receive detailed design insights for automotive design work."
+              demoLink="https://ocorp-ai-chatbot.vercel.app/"
+            />
+          </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={YTCommentsAuto}
+              isBlog={false}
+              title="YouTube Comments Automation | Content Management System"
+              description="A powerful automation platform for YouTube creators to manage and automate video comments efficiently. Features intelligent comment filtering, automated response generation, bulk comment management, engagement analytics, and streamlined moderation workflows."
+              ghLink="https://github.com/Jibrand/Pasha-Project"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={docker}
@@ -294,6 +342,28 @@ function Projects() {
               ghLink="https://github.com/Jibrand/3-Tier-CICD-using-Gitlab"
             />
           </Col>
+           <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={SalesGuardLogo}
+              isBlog={false}
+              title="SalesGuard | AI-Powered B2B Marketplace"
+              description="A comprehensive B2B marketplace with AI-powered seller intelligence, document analysis, and intelligent matching. Features include AI-generated seller insights, advanced PDF analysis, Pinecone vector database for semantic search, OpenAI recommendations, sophisticated filtering, and enterprise authentication. Built with React, TypeScript, Vite, Radix UI, Node.js backend, MongoDB, and ML-powered semantic search."
+              demoLink="https://salesguards.com/"
+              ghLink="https://github.com/Jibrand/salesguard-LandingPage-V2-Next.js"
+
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={ToolsTalkLogo}
+              isBlog={false}
+              title="ToolsTalk | Admin Dashboard & Management"
+              description="A sophisticated admin dashboard for enterprise data visualization and management. Features advanced Recharts visualization, React Hook Form with Zod validation, comprehensive Radix UI components, JWT authentication, role-based access, virtualized lists for large datasets. Built with React, Vite, Framer Motion, React Router DOM, Tailwind CSS, and high-performance data handling."
+              demoLink="https://tool-talk-admin-frontend-vv6u.vercel.app/"
+              ghLink="https://github.com/Jibrand/ToolTalk-Admin-Frontend"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={naws}
@@ -301,6 +371,45 @@ function Projects() {
               title="Nodejs-AWS-CRUD-App-with-RDS-S3-and-Jenkins-Pipelines"
               description="This repository contains a complete DevOps project with a CI/CD pipeline built using Jenkins, Docker, AWS RDS, and EC2, featuring automated deployments and continuous integration for a Node.js application."
               ghLink="https://github.com/Jibrand/Nodejs-AWS-CRUD-App-with-RDS-S3-and-Jenkins-Pipelines"
+            />
+          </Col>
+             <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={EduJourneyLogo}
+              isBlog={false}
+              title="EduJourney | Career Assessment Mobile App"
+              description="A comprehensive React Native mobile app providing AI-powered career assessment and educational guidance. Features RIASEC career testing, intelligent result analysis with career recommendations, user profiles, test history tracking, and smooth animations. Built with React Native, Expo, React Navigation, Reanimated, and modern mobile-first design for iOS and Android."
+              ghLink="https://github.com/Jibrand/EduJourney"
+              demoLink="https://drive.google.com/file/d/173tGe3KUeOmhWjQavya8iikIDcx5Twm_/view?usp=sharing"
+            />
+          </Col>
+              <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={ZaynaLogo}
+              isBlog={false}
+              title="Zayna | AI-Powered Healthcare Management"
+              description="A comprehensive healthcare platform for patient care, health tracking, and medical data management. Features patient profiles, appointment scheduling, health analytics dashboards, JWT authentication, and coming soon app builder and gaming features. Built with React, Vite, Framer Motion, Recharts, and responsive design."
+              demoLink="https://zayna-web.vercel.app/"
+            />
+          </Col>
+ <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={MernPOSLogo}
+              isBlog={false}
+              title="NexusPOS | Enterprise Point of Sale & Inventory System"
+              description="A comprehensive full-stack POS system built with MERN stack for retail enterprises. Features real-time transaction processing, advanced inventory management, multi-user authentication with role-based access, sales analytics dashboards, customer management, product catalog, barcode scanning, payment integration, and daily sales reporting."
+              ghLink="https://github.com/Jibrand/MernPOS"
+            />
+          </Col>
+
+              <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={PrivacyGuardPG}
+              isBlog={false}
+              title="PrivacyGuard (PiiFuse) | Privacy Data Protection Platform"
+              description="An enterprise-grade platform that detects and sanitizes sensitive PII and secrets in real-time. Features endpoint-level privacy policies, PII detection/redaction, compliance audit trails, and analytics dashboards for GDPR, HIPAA, and SOC 2 compliance."
+              ghLink="https://github.com/Jibrand/PIIFUSE-Landing-Page"
+              demoLink="https://piifuse-landing-page.vercel.app/"
             />
           </Col>
 
@@ -314,6 +423,14 @@ function Projects() {
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={AiBankerLogo}
+              isBlog={false}
+              title="AI Banker | Intelligent Banking Chatbot Backend"
+              description="An AI-powered banking chatbot backend built with Python Flask and OpenAI integration. Features intelligent conversation processing, natural language understanding for financial queries, context-aware banking responses, and comprehensive chatbot API endpoints. Includes conversation history tracking and deployment-ready configuration."
+             />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={GA}
@@ -333,6 +450,7 @@ function Projects() {
               ghLink="https://github.com/Jibrand/3-Tier-Application-Deployment-with-Kubernetes"
             />
           </Col>
+
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={GenieEngage}
@@ -342,6 +460,7 @@ function Projects() {
               ghLink="https://github.com/Jibrand/ViteLandingPageGenieEngage"
             />
           </Col>
+
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={contactless}
@@ -351,6 +470,7 @@ function Projects() {
               demoLink="https://theindiankitchen.netlify.app/65cbd73ece5c8ad3601e2573"
             />
           </Col>
+
         </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
@@ -577,67 +697,11 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={ChairBookedDashboard}
-              isBlog={false}
-              title="ChairBooked | AI Chatbot & CRM Platform"
-              description="A comprehensive SaaS platform for local service businesses (plumbers, heating engineers) featuring 24/7 AI website chatbot for appointment booking, automated email status updates, review collection automation, win-back campaigns, and a powerful CRM dashboard. Increases client bookings by 10-15/month. Built with React, MongoDB, Node.js deployed on Vercel."
-              ghLink="https://github.com/Jibrand/chairbooked"
-              demoLink="https://chair-booked.vercel.app/"
-            />
-          </Col>
+      
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={InboxHRDashboard}
-              isBlog={false}
-              title="InboxHR | AI-Powered HR Management Platform"
-              description="An enterprise SaaS platform automating HR operations with AI-powered 24/7 employee chatbot, policy management automation, employee onboarding, Zoho integration, bulk CSV import, real-time analytics, and enterprise security. Streamlines HR workflows and reduces manual tasks while improving employee support."
-              demoLink="https://inboxhr.cloud/"
-            />
-          </Col>
+     
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={PlutioDashboard}
-              isBlog={false}
-              title="Plutio Voice Action Assistant | Desktop App Voice Control"
-              description="A hands-free voice command system for Plutio's desktop app featuring on-screen voice widget, speech processing, and real-time status notifications. Records voice commands and automatically triggers actions in the background for seamless voice-powered productivity."
-              demoLink="https://drive.google.com/file/d/1swit7bEHdtBxDbvxnCgyRXbso_L2X2ts/view?usp=sharing"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={OcorpAILogo}
-              isBlog={false}
-              title="OcorpAI | AI-Powered Automotive Design Sketch Evaluator"
-              description="An intelligent AI platform for evaluating automotive exterior design sketches with professional design perspective. Features advanced sketch analysis, design intent assessment, and real-time AI feedback. Users upload sketches to receive detailed design insights for automotive design work."
-              demoLink="https://ocorp-ai-chatbot.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={YTCommentsAuto}
-              isBlog={false}
-              title="YouTube Comments Automation | Content Management System"
-              description="A powerful automation platform for YouTube creators to manage and automate video comments efficiently. Features intelligent comment filtering, automated response generation, bulk comment management, engagement analytics, and streamlined moderation workflows."
-              ghLink="https://github.com/Jibrand/Pasha-Project"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={PrivacyGuardPG}
-              isBlog={false}
-              title="PrivacyGuard (PiiFuse) | Privacy Data Protection Platform"
-              description="An enterprise-grade platform that detects and sanitizes sensitive PII and secrets in real-time. Features endpoint-level privacy policies, PII detection/redaction, compliance audit trails, and analytics dashboards for GDPR, HIPAA, and SOC 2 compliance."
-              ghLink="https://github.com/Jibrand/PIIFUSE-Landing-Page"
-              demoLink="https://piifuse-landing-page.vercel.app/"
-            />
-          </Col>
+      
 
           <Col md={4} className="project-card">
             <ProjectCards
@@ -645,31 +709,12 @@ function Projects() {
               isBlog={false}
               title="Live Stock Care | Livestock Management & E-Commerce Platform"
               description="A comprehensive livestock management and e-commerce platform with animal tracking, health records, breeding cycles monitoring, product marketplace, Stripe payments, and admin analytics. Features user authentication, role-based access control, and complete CRUD operations for agricultural operations."
-              ghLink="https://github.com/Jibrand/Live-Stock-Care-Project"
-              demoLink="https://github.com/Jibrand/Live-Stock-Care"
+              ghLink="https://github.com/Jibrand/Live-Stock-Care"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={AiBankerLogo}
-              isBlog={false}
-              title="AI Banker | Intelligent Banking Chatbot Backend"
-              description="An AI-powered banking chatbot backend built with Python Flask and OpenAI integration. Features intelligent conversation processing, natural language understanding for financial queries, context-aware banking responses, and comprehensive chatbot API endpoints. Includes conversation history tracking and deployment-ready configuration."
-              ghLink="https://github.com/Jibrand/AiBankerPython"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={MernPOSLogo}
-              isBlog={false}
-              title="NexusPOS | Enterprise Point of Sale & Inventory System"
-              description="A comprehensive full-stack POS system built with MERN stack for retail enterprises. Features real-time transaction processing, advanced inventory management, multi-user authentication with role-based access, sales analytics dashboards, customer management, product catalog, barcode scanning, payment integration, and daily sales reporting."
-              ghLink="https://github.com/Jibrand/MernPOS"
-            />
-          </Col>
-
+         
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={PostRightLogo}
@@ -677,7 +722,6 @@ function Projects() {
               title="PostRight | Social Network & Contact Management Platform"
               description="A modern social networking and contact management platform built with React and Vite. Features user contact management, social connection features, real-time messaging and notifications, contact organization, Tailwind CSS styling, Axios API communication, and react-toast notifications. Deployed on Vercel for seamless performance."
               ghLink="https://github.com/Jibrand/postRight"
-              demoLink="https://post-right-xi.vercel.app"
             />
           </Col>
 
@@ -688,30 +732,12 @@ function Projects() {
               title="SecureCloud Academy | Cloud Security Learning Platform"
               description="A comprehensive full-stack cloud security bootcamp with enterprise dashboard. Features curriculum management, interactive lessons, hands-on labs, real-time progress tracking, role-based access, ApexCharts analytics, PDF generation, Formik forms, React Quill rich text, and MongoDB backend. Displays student progress, course completion, lab scores, and certification tracking."
               ghLink="https://github.com/Jibrand/CloudSecurityBootcampCDashboard"
+              demoLink='https://play.cloudsecuritybootcamp.com'
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={Story2SleepLogo}
-              isBlog={false}
-              title="Story2Sleep | AI-Powered Story Generation Platform"
-              description="A sophisticated Next.js application leveraging AI to generate personalized bedtime stories for sleep and relaxation. Features story generation with AI, JWT authentication, email notifications, Google API integration, MongoDB persistence, real-time customization, and Sharp image processing. Built with Next.js 14, Tailwind CSS, DaisyUI components, and React Icons for a beautiful, calming user experience."
-              ghLink="https://github.com/Jibrand/Story2Sleep"
-              demoLink="https://story2-sleep.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={ZaynaLogo}
-              isBlog={false}
-              title="Zayna | AI-Powered Healthcare Management"
-              description="A comprehensive healthcare platform for patient care, health tracking, and medical data management. Features patient profiles, appointment scheduling, health analytics dashboards, JWT authentication, and coming soon app builder and gaming features. Built with React, Vite, Framer Motion, Recharts, and responsive design."
-              ghLink="https://github.com/Jibrand/Zayna"
-              demoLink="https://zayna-web.vercel.app/"
-            />
-          </Col>
+      
+ 
 
           <Col md={4} className="project-card">
             <ProjectCards
@@ -723,37 +749,10 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={SalesGuardLogo}
-              isBlog={false}
-              title="SalesGuard | AI-Powered B2B Marketplace"
-              description="A comprehensive B2B marketplace with AI-powered seller intelligence, document analysis, and intelligent matching. Features include AI-generated seller insights, advanced PDF analysis, Pinecone vector database for semantic search, OpenAI recommendations, sophisticated filtering, and enterprise authentication. Built with React, TypeScript, Vite, Radix UI, Node.js backend, MongoDB, and ML-powered semantic search."
-              demoLink="https://salesguards.com/"
-            />
-          </Col>
+         
 
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={ToolsTalkLogo}
-              isBlog={false}
-              title="ToolsTalk | Admin Dashboard & Management"
-              description="A sophisticated admin dashboard for enterprise data visualization and management. Features advanced Recharts visualization, React Hook Form with Zod validation, comprehensive Radix UI components, JWT authentication, role-based access, virtualized lists for large datasets. Built with React, Vite, Framer Motion, React Router DOM, Tailwind CSS, and high-performance data handling."
-              demoLink="https://tool-talk-admin-frontend-vv6u.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={EduJourneyLogo}
-              isBlog={false}
-              title="EduJourney | Career Assessment Mobile App"
-              description="A comprehensive React Native mobile app providing AI-powered career assessment and educational guidance. Features RIASEC career testing, intelligent result analysis with career recommendations, user profiles, test history tracking, and smooth animations. Built with React Native, Expo, React Navigation, Reanimated, and modern mobile-first design for iOS and Android."
-              ghLink="https://github.com/Jibrand/EduJourney"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
+       
+  <Col md={4} className="project-card">
             <ProjectCards
               imgPath={V3CNLogo}
               isBlog={false}
@@ -763,6 +762,7 @@ function Projects() {
               demoLink="https://v3cn-landing-page.vercel.app/"
             />
           </Col>
+        
         </Row>
 
 
