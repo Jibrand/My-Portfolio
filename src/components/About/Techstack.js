@@ -1,9 +1,7 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+﻿import React from "react";
+import { Row, Col } from "react-bootstrap";
 import { SiDotnet, SiCplusplus } from "react-icons/si";
 import { FaDocker, FaJenkins, FaAngular } from "react-icons/fa";
-// import { AiOutlineKubernetes } from "react-icons/ai";
-// import { TbLambda } from "react-icons/tb";
 
 import {
   DiJavascript1,
@@ -15,10 +13,10 @@ import {
 } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import {
-  SiPrometheus ,
+  SiPrometheus,
   SiGrafana,
   SiVuedotjs,
-  SiPython, 
+  SiPython,
   SiAnsible,
   SiTerraform,
   SiKubernetes,
@@ -30,118 +28,171 @@ import {
   SiMicrosoftsqlserver,
   SiExpress,
   SiWordpress,
-  SiGithubactions
+  SiGithubactions,
+  SiTensorflow,
+  SiOpenai,
+  SiPytorch,
 } from "react-icons/si";
 
+const iconStyle = {
+  fontSize: "55px",
+  margin: "15px",
+  color: "rgb(155 126 172)",
+  transition: "all 0.3s ease",
+  cursor: "pointer",
+  padding: "20px 25px",
+  border: "2px solid rgb(155 126 172)",
+  borderRadius: "12px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  minWidth: "100px",
+  minHeight: "100px",
+};
+
+const iconHoverStyle = {
+  ...iconStyle,
+  color: "#c770f0",
+  borderColor: "#c770f0",
+  transform: "scale(1.05)",
+  boxShadow: "0 0 15px rgba(199, 112, 240, 0.4)",
+};
+
+const textBadgeStyle = {
+  fontSize: "14px",
+  fontWeight: "bold",
+  margin: "15px",
+  color: "rgb(155 126 172)",
+  transition: "all 0.3s ease",
+  cursor: "pointer",
+  padding: "20px 25px",
+  border: "2px solid rgb(155 126 172)",
+  borderRadius: "12px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  minWidth: "100px",
+  minHeight: "100px",
+};
+
+const textBadgeHoverStyle = {
+  ...textBadgeStyle,
+  color: "#c770f0",
+  borderColor: "#c770f0",
+  transform: "scale(1.05)",
+  boxShadow: "0 0 15px rgba(199, 112, 240, 0.4)",
+};
 
 function Techstack() {
+  const [hoveredIcon, setHoveredIcon] = React.useState(null);
+
+  const renderIcon = (Icon, index) => (
+    <div
+      key={index}
+      onMouseEnter={() => setHoveredIcon(index)}
+      onMouseLeave={() => setHoveredIcon(null)}
+      style={hoveredIcon === index ? iconHoverStyle : iconStyle}
+    >
+      <Icon />
+    </div>
+  );
+
+  const renderTextBadge = (text, index) => (
+    <div
+      key={index}
+      onMouseEnter={() => setHoveredIcon(index)}
+      onMouseLeave={() => setHoveredIcon(null)}
+      style={hoveredIcon === index ? textBadgeHoverStyle : textBadgeStyle}
+    >
+      {text}
+    </div>
+  );
+
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <div style={{ paddingBottom: "50px", textAlign: "center" }}>
+      {/* Full Stack Section */}
+      <div style={{ marginBottom: "60px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "1.8em" }}>
+          💻 <strong className="purple">Full Stack</strong> Development
+        </h2>
 
+        {/* Frontend */}
+        <div style={{ marginBottom: "50px" }}>
+        
+           <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "1.8em" }}>
+          <strong className="purple underline">Frontend</strong> 
+        </h2>
+          <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+            {renderIcon(DiReact, 0)}
+            {renderIcon(SiVuedotjs, 1)}
+            {renderIcon(SiNextdotjs, 3)}
+            {renderIcon(DiJavascript1, 4)}
+          </div>
+        </div>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVuedotjs className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaAngular className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs className="ml-12" />
-      </Col>
+        {/* Backend */}
+        <div style={{ marginBottom: "50px" }}>
+         
+           <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "1.8em" }}>
+          <strong className="purple underline">Backend</strong> 
+        </h2>
+          <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+            {renderIcon(DiNodejs, 6)}
+            {renderIcon(SiExpress, 7)}
+            {renderIcon(DiPython, 8)}
+            {renderIcon(SiCsharp, 10)}
+            {renderIcon(SiDotnet, 11)}
+          </div>
+        </div>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs className="ml-12" />
-      </Col>
+        {/* Databases & Services */}
+        <div>
+        
+             <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "1.8em" }}>
+          <strong className="purple underline">            Databases & Services</strong> 
+        </h2>
+          <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+            {renderIcon(DiMongodb, 12)}
+            {renderIcon(SiMicrosoftsqlserver, 13)}
+            {renderIcon(IoLogoFirebase, 14)}
+          </div>
+        </div>
+      </div>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiExpress className="ml-12" />
-      </Col>
+      {/* DevOps Section */}
+      <div style={{ marginBottom: "60px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "1.8em" }}>
+          🚀 <strong className="purple">DevOps</strong> & Infrastructure
+        </h2>
+        <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+          {renderIcon(FaDocker, 17)}
+          {renderIcon(SiKubernetes, 18)}
+          {renderIcon(FaJenkins, 19)}
+          {renderIcon(SiGithubactions, 20)}
+          {renderIcon(SiTerraform, 21)}
+          {renderIcon(SiAnsible, 22)}
+          {renderIcon(SiGrafana, 23)}
+          {renderIcon(SiPrometheus, 24)}
+        </div>
+      </div>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <IoLogoFirebase className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCplusplus className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <FaDocker className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKubernetes className="ml-12" />
-      </Col>
-
-
-      <Col xs={4} md={2} className="tech-icons">
-        <FaJenkins className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGrafana className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPrometheus  className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTerraform className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAnsible className="ml-12" />
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <TbLambda     className="ml-12" />
-      </Col>  */}
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGithubactions className="ml-12" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPython className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCsharp className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftsqlserver className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDotnet className="ml-12" />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiWordpress className="ml-12" />
-      </Col>
-
-
-
-
-
-
-
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit className="ml-12" />
-      </Col>
-
-    </Row>
+      {/* GenAI Section */}
+      <div>
+        <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "1.8em" }}>
+          🧠 <strong className="purple">GenAI</strong> & Machine Learning
+        </h2>
+        <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
+          {renderIcon(SiTensorflow, 25)}
+          {renderIcon(SiPython, 26)}
+          {renderIcon(SiOpenai, 27)}
+          {renderIcon(SiCplusplus, 28)}
+          {renderIcon(SiPytorch, 29)}
+          {renderTextBadge("LangChain", 30)}
+          {renderTextBadge("Pinecone", 31)}
+          {renderTextBadge("RAG", 32)}
+        </div>
+      </div>
+    </div>
   );
 }
 
