@@ -1,57 +1,56 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer"; 
-import Resume from "./components/Resume/ResumeNew";
-import Pay from "./components/Home/Pay"
-import OpenAi from "./components/Picture/OpenAi";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Home3 from "./components/Home/Home3";
-import MeetingScreenshots from "./components/MeetingScreenshots/MeetingScreenshots";
+import { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
+import { Layout } from "./components/layout/Layout";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import "./styles/tokens.css";
+import "./styles/base.css";
+import "./styles/components.css";
 
-function App() {
-  const [load, upadateLoad] = useState(true);
+/*
+ * The five primary pages are imported eagerly — they are small, and between them
+ * they cover almost every first visit. Only the case-study pages, which are the
+ * heaviest route and never the entry point, are code-split.
+ */
+const CaseStudy = lazy(() => import("./pages/CaseStudy"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+function RouteFallback() {
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/homepay" element={<Pay />} />
-          <Route path="/OpenAi" element={<OpenAi />} />
-          <Route path="/meetings" element={<MeetingScreenshots />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="container route-fallback">
+      <p className="eyebrow">Loading</p>
+      <p className="section-head__lead">One moment…</p>
+    </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <Layout>
+        <Suspense fallback={<RouteFallback />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/work/:slug" element={<CaseStudy />} />
+
+            {/* Legacy routes from the previous site, kept so old links resolve. */}
+            <Route path="/project" element={<Navigate to="/projects" replace />} />
+            <Route path="/resume" element={<Navigate to="/experience" replace />} />
+            <Route path="/homepay" element={<Navigate to="/" replace />} />
+            <Route path="/OpenAi" element={<Navigate to="/" replace />} />
+            <Route path="/meetings" element={<Navigate to="/" replace />} />
+
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </Layout>
+    </Router>
+  );
+}

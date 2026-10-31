@@ -1,17 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.render(
+/* Self-hosted typefaces — latin subsets only, no external font requests.
+   Geist: interface and body · Instrument Serif: editorial accents ·
+   JetBrains Mono: labels, meta and numerals. */
+import "@fontsource-variable/geist";
+import "@fontsource-variable/jetbrains-mono";
+/* Extension-less subpaths: the package's exports map points these at the CSS. */
+import "@fontsource/instrument-serif/latin-400";
+import "@fontsource/instrument-serif/latin-400-italic";
+
+import App from "./App";
+
+const container = document.getElementById("root");
+createRoot(container).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

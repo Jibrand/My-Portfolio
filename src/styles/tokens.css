@@ -1,0 +1,140 @@
+/* ===========================================================================
+   Design tokens — "editorial technical"
+   ---------------------------------------------------------------------------
+   Direction: warm neutral grounds, near-black charcoal, one burnt-orange accent,
+   three typefaces with clearly separated jobs.
+   All text/background pairs below were verified numerically for WCAG AA.
+   =========================================================================== */
+
+:root {
+  /* --- Typefaces -------------------------------------------------------- */
+  --font-display: "Geist Variable", "Geist", ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: var(--font-display);
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular,
+    "SF Mono", Menlo, Consolas, monospace;
+
+  /* --- Type scale (fluid) ----------------------------------------------- */
+  --fs-display: clamp(2.75rem, 1.4rem + 6.2vw, 6rem);
+  --fs-h1: clamp(2.25rem, 1.5rem + 3.1vw, 3.75rem);
+  --fs-h2: clamp(1.75rem, 1.25rem + 2.1vw, 2.75rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --fs-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.3125rem);
+  --fs-body: 1.0625rem;
+  --fs-sm: 0.9375rem;
+  --fs-xs: 0.8125rem;
+  --fs-label: 0.75rem;
+
+  --lh-display: 0.94;
+  --lh-heading: 1.1;
+  --lh-body: 1.62;
+  --lh-tight: 1.35;
+
+  --track-display: -0.035em;
+  --track-heading: -0.02em;
+  --track-label: 0.14em;
+
+  /* --- Spacing (4px base) ----------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-11: 6.5rem;
+  --space-12: 8rem;
+
+  --section-y: clamp(4.5rem, 3rem + 6.5vw, 9rem);
+
+  /* --- Layout ----------------------------------------------------------- */
+  --container: 74rem;
+  --container-narrow: 44rem;
+  --gutter: clamp(1.25rem, 0.7rem + 2.2vw, 2.5rem);
+  --nav-height: 4.5rem;
+
+  /* --- Radii (a deliberate, small set) ---------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 620ms;
+
+  /* =========================================================================
+     Light theme — warm off-white, never pure white ground
+     ====================================================================== */
+  --bg: #faf8f5;
+  --bg-alt: #f3f1ec;
+  --surface: #ffffff;
+  --surface-hi: #ffffff;
+
+  --text: #1a1917;          /* 16.57:1 on --bg */
+  --text-muted: #5f5c57;    /*  6.28:1 on --bg */
+  --text-subtle: #8a867f;   /*  3.42:1 — large text + decoration only, never small copy */
+
+  --border: #e6e2da;
+  --border-strong: #d3cec4;
+  --border-input: #8a867f;  /* >=3:1 for control boundaries */
+
+  --accent: #a63a0a;        /*  6.13:1 on --bg */
+  --accent-hover: #8a2f06;
+  --accent-on: #ffffff;     /*  6.50:1 on --accent */
+  --accent-soft: #f6e9df;
+  --accent-tint: rgba(166, 58, 10, 0.08);
+
+  --focus: #1d4ed8;
+  --grid-line: rgba(26, 25, 23, 0.075);
+  --glow: rgba(166, 58, 10, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(26, 25, 23, 0.05);
+  --shadow-md: 0 6px 22px -8px rgba(26, 25, 23, 0.14),
+    0 1px 3px rgba(26, 25, 23, 0.05);
+  --shadow-lg: 0 30px 60px -30px rgba(26, 25, 23, 0.28),
+    0 4px 12px -4px rgba(26, 25, 23, 0.08);
+  --shadow-media: 0 34px 70px -34px rgba(26, 25, 23, 0.34);
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #0c0d0f;
+  --bg-alt: #101214;
+  --surface: #15181b;
+  --surface-hi: #1a1e22;
+
+  --text: #f4f2ef;          /* 17.40:1 on --bg */
+  --text-muted: #a3a099;    /*  7.45:1 on --bg */
+  --text-subtle: #7c7a75;   /*  4.53:1 on --bg */
+
+  --border: #22262a;
+  --border-strong: #33383e;
+  --border-input: #545a61;
+
+  --accent: #f08a2e;        /*  7.76:1 on --bg */
+  --accent-hover: #ffa352;
+  --accent-on: #17130e;     /*  7.76:1 on --accent */
+  --accent-soft: #24170b;
+  --accent-tint: rgba(240, 138, 46, 0.1);
+
+  --focus: #8ab4ff;
+  --grid-line: rgba(244, 242, 239, 0.07);
+  --glow: rgba(240, 138, 46, 0.16);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 6px 22px -8px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 30px 60px -30px rgba(0, 0, 0, 0.8),
+    0 4px 12px -4px rgba(0, 0, 0, 0.5);
+  --shadow-media: 0 34px 70px -34px rgba(0, 0, 0, 0.75);
+
+  color-scheme: dark;
+}
