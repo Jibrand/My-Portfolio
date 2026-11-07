@@ -9,6 +9,7 @@ const items = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
+  { id: "blog", label: "Blog" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -34,10 +35,11 @@ export function MainNav() {
   return (
     <nav className="main-nav" aria-label="Main navigation">
       {items.map(({ id, label }) => {
-        const archive = id === "work" && (pathname === "/projects" || pathname.startsWith("/projects/"));
+        const archive = (id === "work" && (pathname === "/projects" || pathname.startsWith("/projects/")))
+          || (id === "blog" && pathname.startsWith("/blog"));
         const current = archive ? "page" : pathname === "/" && section === id ? "location" : undefined;
 
-        return <Link key={id} href={`/#${id}`} aria-current={current} className={id === "experience" ? "nav-experience" : undefined}>{label}</Link>;
+        return <Link key={id} href={id === "blog" ? "/blog/" : `/#${id}`} aria-current={current} className={id === "experience" ? "nav-experience" : undefined}>{label}</Link>;
       })}
     </nav>
   );

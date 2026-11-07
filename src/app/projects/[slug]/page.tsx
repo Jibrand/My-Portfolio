@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/portfolio";
 import { ProjectArt } from "../../project-card";
+import { articles } from "@/lib/articles";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -20,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: project.name,
     description: project.description,
-    alternates: { canonical: `/projects/${slug}` },
-    openGraph: { title: project.name, description: project.description, url: `/projects/${slug}` },
+    alternates: { canonical: `/projects/${slug}/` },
+    openGraph: { title: project.name, description: project.description, url: `/projects/${slug}/` },
   };
 }
 
@@ -29,6 +30,7 @@ export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
+  const relatedArticles = articles.filter((article) => article.relatedProjects.includes(project.id));
 
   return (
     <main id="main" className="wrap route">
@@ -47,6 +49,10 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         )}
         {!project.links.length && project.linkNote?.startsWith("Private repository") && <p className="detail-note">{project.linkNote}</p>}
+        {relatedArticles.length > 0 && <section className="related-reading" aria-labelledby="related-reading-title">
+          <h2 id="related-reading-title">Related engineering articles</h2>
+          <ul>{relatedArticles.map(({ slug: articleSlug, title }) => <li key={articleSlug}><Link href={`/blog/${articleSlug}/`}>{title} →</Link></li>)}</ul>
+        </section>}
       </article>
     </main>
   );

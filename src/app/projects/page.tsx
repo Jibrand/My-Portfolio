@@ -7,7 +7,13 @@ import { Archive } from "./archive";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Explore Muhammad Jibran’s projects across AI automation, product engineering, and cloud infrastructure.",
-  alternates: { canonical: "/projects" },
+  alternates: { canonical: "/projects/" },
+  openGraph: {
+    title: "SaaS, AI & Full-Stack Projects | Muhammad Jibran",
+    description: "Explore 28 projects across product engineering, AI automation, and cloud infrastructure.",
+    url: "/projects/",
+    type: "website",
+  },
 };
 
 export default function ProjectsPage() {

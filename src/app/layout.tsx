@@ -7,13 +7,14 @@ import { Effects } from "./effects";
 import { SocialLinks } from "./social-links";
 import "./globals.css";
 
-const description = "Muhammad Jibran is a product, full-stack, and AI engineer building SaaS products, voice AI, and workflow automation.";
+const description = "Muhammad Jibran is a product engineer and full-stack AI engineer building SaaS applications, voice AI, and workflow automation. Explore projects and engineering articles.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.site),
-  title: { default: `${profile.name} | Product & AI Engineer`, template: `%s | ${profile.name}` },
+  title: { default: `${profile.name} | Product Engineer & AI Engineer`, template: `%s | ${profile.name}` },
   description,
-  openGraph: { type: "website", title: `${profile.name} | Product & AI Engineer`, description, siteName: profile.name },
+  authors: [{ name: profile.name, url: new URL("/#about", profile.site).href }],
+  openGraph: { type: "website", title: `${profile.name} | Product Engineer & AI Engineer`, description, siteName: profile.name, locale: "en_US" },
   twitter: { card: "summary_large_image" },
 };
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Effects>{children}</Effects>
           <footer className="wrap site-footer">
             <Link href="/" className="brand"><span className="monogram" aria-hidden="true">MJ</span>{profile.name}</Link>
+            <Link className="project-action" href="/blog/">Engineering blog ↗</Link>
             <SocialLinks />
           </footer>
         </PortfolioTheme>

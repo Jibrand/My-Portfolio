@@ -7,10 +7,12 @@ import { ProjectCard } from "./project-card";
 import { Reveal } from "./effects";
 import { Testimonials } from "./testimonials";
 import { socialLinks } from "@/lib/testimonials";
+import { articles } from "@/lib/articles";
+import { ArticleCard } from "./blog/article-card";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  openGraph: { url: "/", title: "Muhammad Jibran | Product & AI Engineer", description: profile.summary, type: "website" },
+  openGraph: { url: "/", title: "Muhammad Jibran | Product Engineer & AI Engineer", description: profile.summary, type: "website" },
 };
 
 const focus = [
@@ -22,21 +24,26 @@ const skillIcons = [Command, Layers3, Waypoints];
 
 export default function Home() {
   const person = {
-    "@context": "https://schema.org", "@type": "Person", name: profile.name,
+    "@context": "https://schema.org", "@type": "Person", "@id": new URL("/#person", profile.site).href, name: profile.name,
     url: profile.site, image: new URL("/portrait.jpg", profile.site).href, jobTitle: profile.headline,
     sameAs: socialLinks.map(({ url }) => url),
     alumniOf: { "@type": "CollegeOrUniversity", name: profile.education[0].institution },
+    knowsAbout: ["Product engineering", "Full-stack development", "AI engineering", "Voice AI", "Workflow automation", "SaaS development"],
   };
 
   return (
     <main id="main" className="wrap home">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person).replaceAll("<", "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org", "@type": "WebSite", name: profile.name,
+        url: profile.site, inLanguage: "en", publisher: { "@id": new URL("/#person", profile.site).href },
+      }).replaceAll("<", "\\u003c") }} />
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow hero-intro">Muhammad Jibran <span>/</span> Product & AI Engineer</p>
+          <p className="eyebrow hero-intro">Muhammad Jibran <span>/</span> Product Engineer & AI Engineer</p>
           <h1 id="hero-title">Ideas into<br /><em>working products.</em></h1>
-          <p className="hero-description">I build SaaS products, voice AI, and workflow automation, from the first technical decision to production.</p>
+          <p className="hero-description">I’m a full-stack product engineer building SaaS applications, voice AI, and workflow automation, from the first technical decision to production.</p>
           <div className="actions">
             <Link className="button primary" href="/#work">Explore my work <ArrowDown size={17} aria-hidden="true" /></Link>
             <a className="button secondary" href={`mailto:${profile.email}`}>Get in touch <ArrowUpRight size={17} aria-hidden="true" /></a>
@@ -138,6 +145,14 @@ export default function Home() {
             </Reveal>;
           })}
         </div>
+      </section>
+
+      <section className="section" id="blog" aria-labelledby="journal-title">
+        <div className="section-heading">
+          <div><p className="eyebrow section-index">Engineering journal</p><h2 id="journal-title">Inside the <em>work.</em></h2></div>
+          <Link className="button secondary" href="/blog/">Explore the blog <ArrowUpRight size={17} aria-hidden="true" /></Link>
+        </div>
+        <div className="article-grid">{articles.map((article) => <ArticleCard key={article.slug} article={article} />)}</div>
       </section>
 
       <Testimonials />
