@@ -20,9 +20,9 @@ export function ProjectArt({ project }: { project: Project }) {
   const Icon = featuredArt[project.id as keyof typeof featuredArt] ?? (project.category === "Infrastructure & Delivery" ? GitFork : Database);
 
   return (
-    <div className={`project-art ${image ? "project-art-image" : ""} visual-${project.number % 3}`} aria-hidden="true">
+    <div className={`project-art ${image ? "project-art-image" : ""} visual-${project.number % 3}`} aria-hidden={image ? undefined : true}>
       {image ? (
-        <Image src={image} alt="" fill sizes="(max-width: 740px) 100vw, (max-width: 1100px) 50vw, 650px" />
+        <Image src={image} alt={`${project.name} project preview`} fill sizes="(max-width: 740px) 100vw, (max-width: 1100px) 50vw, 650px" />
       ) : (
         <>
           <span className="art-index">MJ / {String(project.number).padStart(2, "0")}</span>
@@ -47,7 +47,7 @@ export function ProjectLinks({ project }: { project: Project }) {
 }
 
 export function ProjectCard({ project, lead = false }: { project: Project; lead?: boolean }) {
-  const href = `/projects/${project.slug}`;
+  const href = `/projects/${project.slug}/`;
   return (
     <Spotlight feature={lead}>
       <Link className="project-cover" href={href} aria-label={`View ${project.name} project`}>

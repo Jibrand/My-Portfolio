@@ -27,7 +27,7 @@ export function Archive({ entries }: { entries: Entry[] }) {
     if (value) next.set(key, value);
     else next.delete(key);
     const search = next.toString();
-    window.history.replaceState(null, "", search ? `/projects?${search}` : "/projects");
+    window.history.replaceState(null, "", search ? `/projects/?${search}` : "/projects/");
   }
 
   return (

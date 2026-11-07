@@ -3,7 +3,8 @@ import catalog from "../../portfolio-data.json";
 export const profile = {
   name: catalog.profile.name,
   location: catalog.profile.location,
-  headline: catalog.profile.headline,
+  headline: "Full-Stack & AI Engineer | Product Engineer",
+  experienceYears: "5+",
   summary: catalog.profile.summary,
   education: catalog.profile.education,
   site: process.env.SITE_URL || "https://muhammadjibran.netlify.app",

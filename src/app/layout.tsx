@@ -5,17 +5,31 @@ import { PortfolioTheme, ThemeToggle } from "./theme-toggle";
 import { MainNav } from "./main-nav";
 import { Effects } from "./effects";
 import { SocialLinks } from "./social-links";
+import { homeDescription, homeTitle, socialImage } from "@/lib/seo";
 import "./globals.css";
-
-const description = "Muhammad Jibran is a product engineer and full-stack AI engineer building SaaS applications, voice AI, and workflow automation. Explore projects and engineering articles.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.site),
-  title: { default: `${profile.name} | Product Engineer & AI Engineer`, template: `%s | ${profile.name}` },
-  description,
+  title: { default: homeTitle, template: `%s | ${profile.name}` },
+  description: homeDescription,
+  alternates: { canonical: "/" },
   authors: [{ name: profile.name, url: new URL("/#about", profile.site).href }],
-  openGraph: { type: "website", title: `${profile.name} | Product Engineer & AI Engineer`, description, siteName: profile.name, locale: "en_US" },
-  twitter: { card: "summary_large_image" },
+  creator: profile.name,
+  icons: { apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }] },
+  category: "Software engineering",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: { type: "website", title: homeTitle, description: homeDescription, url: "/", siteName: profile.name, locale: "en_US", images: [socialImage] },
+  twitter: { card: "summary_large_image", title: homeTitle, description: homeDescription, creator: "@jibrandevm", images: [{ url: socialImage.url, alt: socialImage.alt }] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

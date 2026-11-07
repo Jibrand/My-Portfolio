@@ -9,11 +9,10 @@ import { Testimonials } from "./testimonials";
 import { socialLinks } from "@/lib/testimonials";
 import { articles } from "@/lib/articles";
 import { ArticleCard } from "./blog/article-card";
+import { homeDescription, homeTitle, pageMetadata } from "@/lib/seo";
+import { StructuredData } from "./structured-data";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-  openGraph: { url: "/", title: "Muhammad Jibran | Product Engineer & AI Engineer", description: profile.summary, type: "website" },
-};
+export const metadata: Metadata = pageMetadata({ title: homeTitle, description: homeDescription, path: "/" });
 
 const focus = [
   { icon: Braces, title: "Product engineering", detail: "SaaS · Full-stack" },
@@ -26,18 +25,23 @@ export default function Home() {
   const person = {
     "@context": "https://schema.org", "@type": "Person", "@id": new URL("/#person", profile.site).href, name: profile.name,
     url: profile.site, image: new URL("/portrait.jpg", profile.site).href, jobTitle: profile.headline,
+    description: homeDescription,
+    address: { "@type": "PostalAddress", addressLocality: "Karachi", addressCountry: "PK" },
     sameAs: socialLinks.map(({ url }) => url),
     alumniOf: { "@type": "CollegeOrUniversity", name: profile.education[0].institution },
-    knowsAbout: ["Product engineering", "Full-stack development", "AI engineering", "Voice AI", "Workflow automation", "SaaS development"],
+    knowsAbout: ["Product engineering", "Full-stack web development", "AI agents", "Generative AI", "Voice AI", "Workflow automation", "SaaS development", "Next.js", "React", "TypeScript", "Node.js", "Python", "FastAPI", "PostgreSQL", "RAG systems"],
   };
 
   return (
     <main id="main" className="wrap home">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person).replaceAll("<", "\\u003c") }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org", "@type": "WebSite", name: profile.name,
-        url: profile.site, inLanguage: "en", publisher: { "@id": new URL("/#person", profile.site).href },
-      }).replaceAll("<", "\\u003c") }} />
+      <StructuredData data={{
+        "@context": "https://schema.org",
+        "@graph": [
+          person,
+          { "@type": "WebSite", "@id": new URL("/#website", profile.site).href, name: profile.name, url: profile.site, inLanguage: "en", publisher: { "@id": person["@id"] } },
+          { "@type": "ProfilePage", "@id": new URL("/#profile", profile.site).href, url: profile.site, name: homeTitle, description: homeDescription, mainEntity: { "@id": person["@id"] }, isPartOf: { "@id": new URL("/#website", profile.site).href } },
+        ],
+      }} />
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
@@ -70,9 +74,9 @@ export default function Home() {
       </div>
 
       <section className="proof-grid" aria-label="Engineering achievements">
-        <div><strong>4+</strong><span>Years building software</span><p>Full-stack engineering, applied AI, and cloud delivery.</p></div>
+        <div><strong>{profile.experienceYears}</strong><span>Years building software</span><p>Full-stack engineering, applied AI, and cloud delivery.</p></div>
         <div><strong>50+</strong><span>Freelance projects delivered</span><p>Web applications and e-commerce for international clients.</p></div>
-        <div><strong>{projects.length}</strong><span>Projects in the archive</span><p>Explore the work, technology, and available demos.</p><Link href="/projects">Explore projects <ArrowUpRight size={15} aria-hidden="true" /></Link></div>
+        <div><strong>{projects.length}</strong><span>Projects in the archive</span><p>Explore the work, technology, and available demos.</p><Link href="/projects/">Explore projects <ArrowUpRight size={15} aria-hidden="true" /></Link></div>
       </section>
 
       <section className="section" id="work" aria-labelledby="work-title">
@@ -85,7 +89,7 @@ export default function Home() {
         </div>
         <div className="archive-cta">
           <span className="eyebrow">The full project archive</span>
-          <Link className="button secondary" href="/projects">View all {projects.length} projects <ArrowUpRight size={17} aria-hidden="true" /></Link>
+          <Link className="button secondary" href="/projects/">View all {projects.length} projects <ArrowUpRight size={17} aria-hidden="true" /></Link>
         </div>
       </section>
 
@@ -94,7 +98,7 @@ export default function Home() {
           <div className="about-heading">
             <p className="eyebrow section-index">02 / About</p>
             <h2 id="about-title">From idea to <em>production.</em></h2>
-            <div className="about-stat"><strong>4+</strong><span className="eyebrow">Years in<br />software engineering</span></div>
+            <div className="about-stat"><strong>{profile.experienceYears}</strong><span className="eyebrow">Years in<br />software engineering</span></div>
           </div>
           <div className="about-copy">
             <p>I work directly with founders and small engineering teams to turn rough ideas into products people can use. My work spans architecture, interface design, integrations, and the infrastructure that keeps it all running.</p>

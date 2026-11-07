@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, readingMinutes } from "@/lib/articles";
 import { profile, projects } from "@/lib/portfolio";
+import { breadcrumbSchema, pageMetadata, socialImage } from "@/lib/seo";
+import { StructuredData } from "../../structured-data";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,8 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = articles.find((item) => item.slug === slug);
   if (!article) return {};
   return {
-    title: article.title,
-    description: article.description,
+    ...pageMetadata({ title: `${article.title} | ${profile.name}`, description: article.description, path: `/blog/${slug}/` }),
     authors: [{ name: profile.name, url: new URL("/#about", profile.site).href }],
     alternates: { canonical: `/blog/${slug}/` },
     openGraph: {
@@ -28,7 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `/blog/${slug}/`,
       publishedTime: article.published,
       authors: [new URL("/#about", profile.site).href],
-      images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: profile.name }],
+      siteName: profile.name,
+      locale: "en_US",
+      images: [socialImage],
     },
   };
 }
@@ -50,18 +53,11 @@ export default async function ArticlePage({ params }: Props) {
       publisher: { "@type": "Person", name: profile.name, url: profile.site },
       inLanguage: "en", articleSection: article.category,
     },
-    {
-      "@context": "https://schema.org", "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: profile.site },
-        { "@type": "ListItem", position: 2, name: "Blog", item: new URL("/blog/", profile.site).href },
-        { "@type": "ListItem", position: 3, name: article.title, item: url },
-      ],
-    },
+    breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Blog", path: "/blog/" }, { name: article.title, path: `/blog/${slug}/` }]),
   ];
   return (
     <main id="main" className="wrap route article-page">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replaceAll("<", "\\u003c") }} />
+      <StructuredData data={structured} />
       <nav aria-label="Breadcrumb" className="article-breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/blog/">Blog</Link></nav>
       <article>
         <header className="article-header">

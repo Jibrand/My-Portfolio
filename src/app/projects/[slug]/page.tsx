@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { projects } from "@/lib/portfolio";
 import { ProjectArt } from "../../project-card";
 import { articles } from "@/lib/articles";
+import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
+import { StructuredData } from "../../structured-data";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -18,12 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = projects.find((item) => item.slug === slug);
   if (!project) return {};
 
-  return {
-    title: project.name,
+  return pageMetadata({
+    title: `${project.name} | Muhammad Jibran`,
     description: project.description,
-    alternates: { canonical: `/projects/${slug}/` },
-    openGraph: { title: project.name, description: project.description, url: `/projects/${slug}/` },
-  };
+    path: `/projects/${slug}/`,
+  });
 }
 
 export default async function ProjectPage({ params }: Props) {
@@ -34,7 +35,8 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <main id="main" className="wrap route">
-      <Link className="back" href="/projects">← All projects</Link>
+      <StructuredData data={breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Projects", path: "/projects/" }, { name: project.name, path: `/projects/${slug}/` }])} />
+      <Link className="back" href="/projects/">← All projects</Link>
       <article>
         <p className="eyebrow section-index">{project.category}</p>
         <h1>{project.name}</h1>
