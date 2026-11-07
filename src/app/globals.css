@@ -268,6 +268,16 @@ h1 em, h2 em { font-style: normal; color: var(--muted); background: var(--chrome
   .project-card:hover::before, .project-card:hover::after { opacity: .8; }
   .project-cover:hover img, .project-cover:hover .art-sculpture { transform: scale(1.07); }
 }
+@media (min-width: 1100px) {
+  html { font-size: 90%; }
+  .wrap { width: min(1116px, calc(100% - 5rem)); }
+  .hero { gap: clamp(1.2rem,3.6vw,5rem); padding-block: clamp(4rem,7.2vw,7.6rem) clamp(3rem,5.4vw,5.7rem); }
+  .hero h1 { font-size: clamp(3.3rem,5.625vw,6.2rem); }
+  h2 { font-size: clamp(3rem,5.67vw,6.1rem); }
+  .section { margin-top: clamp(5.5rem,9.9vw,10rem); }
+  .route h1 { font-size: clamp(3rem,6.3vw,7.2rem); }
+}
+
 @media (max-width: 1000px) {
   .wrap { width: calc(100% - 3rem); }
   .project-grid, .project-grid.featured { grid-template-columns: repeat(2,minmax(0,1fr)); }
