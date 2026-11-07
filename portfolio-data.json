@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "name": "Muhammad Jibran",
+    "headline": "Product Engineer · Full-Stack & AI Engineer",
+    "location": "Karachi, Pakistan",
+    "summary": "I build and ship SaaS products, AI-powered workflows, and full-stack applications.",
+    "education": [
+      {
+        "institution": "Muhammad Ali Jinnah University",
+        "degree": "BE Software Engineering",
+        "cgpa": "3.74/4.0",
+        "graduationYear": 2026
+      }
+    ],
+    "socials": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/Jibrand"
+      }
+    ],
+    "resume": "/Muhammad_Jibran_CV_.pdf",
+    "availability": null,
+    "email": null,
+    "linkedin": null,
+    "experienceYears": null
+  },
+  "featuredProjectIds": [
+    "inboxhr",
+    "chairbooked",
+    "ocorpai",
+    "privacyguard-piifuse",
+    "toolstalk-admin",
+    "zayna"
+  ],
+  "projects": [
+    {
+      "id": "inboxhr",
+      "name": "InboxHR",
+      "description": "HR management platform with an AI chatbot trained on company policy, onboarding automation, bulk CSV import, Zoho integration, and analytics dashboards.",
+      "category": "AI & Automation",
+      "image": "/images/work/inboxhr.webp",
+      "stack": [
+        "React",
+        "TypeScript",
+        "AI chatbot",
+        "Zoho"
+      ],
+      "links": [],
+      "featured": true,
+      "linkNote": "Previously linked domain inboxhr.cloud was reported unavailable; verify before publishing."
+    },
+    {
+      "id": "chairbooked",
+      "name": "ChairBooked",
+      "description": "SaaS platform for local service businesses with a 24/7 AI website chatbot, appointment booking, automated emails, review collection, and a CRM dashboard.",
+      "category": "AI & Automation",
+      "image": "/images/work/chairbooked.webp",
+      "stack": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Vercel"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://chair-booked.vercel.app/"
+        }
+      ],
+      "featured": true,
+      "linkNote": null
+    },
+    {
+      "id": "ocorpai",
+      "name": "OcorpAI",
+      "description": "AI platform that evaluates automotive exterior design sketches and returns structured feedback and design intent assessment.",
+      "category": "AI & Automation",
+      "image": "/images/work/ocorp-ai.webp",
+      "stack": [
+        "LLM APIs",
+        "React"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://ocorp-ai-chatbot.vercel.app/"
+        }
+      ],
+      "featured": true,
+      "linkNote": null
+    },
+    {
+      "id": "privacyguard-piifuse",
+      "name": "PrivacyGuard (PiiFuse)",
+      "description": "Privacy platform for detecting and redacting PII and secrets before they reach logs, databases, or AI models, with endpoint policies and audit trails. Designed for regulated environments; compliance certification is not claimed.",
+      "category": "AI & Automation",
+      "image": "/images/work/piifuse.webp",
+      "stack": [
+        "Node.js",
+        "REST API"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://piifuse-landing-page.vercel.app/"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/PIIFUSE-Landing-Page"
+        }
+      ],
+      "featured": true,
+      "linkNote": null
+    },
+    {
+      "id": "toolstalk-admin",
+      "name": "ToolsTalk Admin",
+      "description": "Enterprise dashboard with Recharts visualization, React Hook Form and Zod validation, Radix UI, JWT authentication, and virtualized lists.",
+      "category": "Product Engineering",
+      "image": "/images/work/toolstalk.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Radix UI",
+        "Recharts"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://tool-talk-admin-frontend-vv6u.vercel.app/"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/ToolTalk-Admin-Frontend"
+        }
+      ],
+      "featured": true,
+      "linkNote": null
+    },
+    {
+      "id": "zayna",
+      "name": "Zayna",
+      "description": "Healthcare management platform with patient profiles, appointment scheduling, analytics dashboards, and JWT-secured routes.",
+      "category": "Product Engineering",
+      "image": "/images/work/zayna.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Recharts"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://zayna-web.vercel.app/"
+        }
+      ],
+      "featured": true,
+      "linkNote": null
+    },
+    {
+      "id": "nexuspos",
+      "name": "NexusPOS",
+      "description": "MERN point-of-sale and inventory system with transactions, stock tracking, role-based access, sales reports, and receipts.",
+      "category": "Product Engineering",
+      "image": "/images/work/nexuspos.webp",
+      "stack": [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js"
+      ],
+      "links": [],
+      "featured": false,
+      "linkNote": "Private repository; demo available on request."
+    },
+    {
+      "id": "live-stock-care",
+      "name": "Live Stock Care",
+      "description": "Livestock management and e-commerce platform with inventory, health records, marketplace, Stripe payments, and role-based admin analytics.",
+      "category": "Product Engineering",
+      "image": "/images/work/livestock-care.webp",
+      "stack": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Stripe"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Live-Stock-Care"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "edujourney",
+      "name": "EduJourney",
+      "description": "React Native career-assessment app using the RIASEC model with results analysis, career recommendations, and local persistence.",
+      "category": "Product Engineering",
+      "image": "/images/work/edujourney.webp",
+      "stack": [
+        "React Native",
+        "Expo"
+      ],
+      "links": [
+        {
+          "label": "Demo video",
+          "href": "https://drive.google.com/file/d/173tGe3KUeOmhWjQavya8iikIDcx5Twm_/view?usp=sharing"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "v3cn",
+      "name": "V3CN",
+      "description": "Full-stack SaaS landing platform with Vue 3 and TypeScript, Node.js and MongoDB backend, JWT authentication, and Cloudinary image handling.",
+      "category": "Product Engineering",
+      "image": "/images/work/v3cn.webp",
+      "stack": [
+        "Vue 3",
+        "TypeScript",
+        "Node.js",
+        "MongoDB"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://v3cn-landing-page.vercel.app/"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "email-automation",
+      "name": "Email Automation",
+      "description": "Bulk email campaign backend with Nodemailer delivery, templates, tracking, Excel batch imports, and JWT-secured contact management.",
+      "category": "AI & Automation",
+      "image": "/images/work/email-automation.webp",
+      "stack": [
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "links": [],
+      "featured": false,
+      "linkNote": "Private repository; demo available on request."
+    },
+    {
+      "id": "postright",
+      "name": "PostRight",
+      "description": "Social and contact management platform with messaging, notifications, and contact organization.",
+      "category": "Product Engineering",
+      "image": "/images/work/postright.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://post-right-xi.vercel.app"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "securecloud-academy",
+      "name": "SecureCloud Academy",
+      "description": "Cloud security bootcamp platform with curriculum management, hands-on labs, progress tracking, ApexCharts analytics, and PDF certificates.",
+      "category": "Product Engineering",
+      "image": null,
+      "stack": [
+        "React",
+        "MongoDB",
+        "ApexCharts"
+      ],
+      "links": [],
+      "featured": false,
+      "linkNote": "Previously linked site play.cloudsecuritybootcamp.com was reported unavailable; verify before publishing."
+    },
+    {
+      "id": "genieengage",
+      "name": "GenieEngage",
+      "description": "Landing product for fetching, categorizing, and summarizing video comments in real time.",
+      "category": "AI & Automation",
+      "image": "/images/work/genie-engage.webp",
+      "stack": [
+        "Vite",
+        "React"
+      ],
+      "links": [],
+      "featured": false,
+      "linkNote": "Private repository; demo available on request."
+    },
+    {
+      "id": "youtube-comments-automation",
+      "name": "YouTube Comments Automation",
+      "description": "Creator comment management system with intelligent filtering, generated responses, bulk moderation, and engagement analytics.",
+      "category": "AI & Automation",
+      "image": "/images/work/youtube-automation.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Node.js"
+      ],
+      "links": [],
+      "featured": false,
+      "linkNote": "Private repository; demo available on request."
+    },
+    {
+      "id": "contactless-menu",
+      "name": "Contactless Menu",
+      "description": "MERN digital menu and ordering system for restaurants accessed by QR code.",
+      "category": "Product Engineering",
+      "image": "/images/work/contactless-menu.webp",
+      "stack": [
+        "MERN"
+      ],
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://theindiankitchen.netlify.app/65cbd73ece5c8ad3601e2573"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "library-management-system",
+      "name": "Library Management System",
+      "description": "Book inventory, member registration, loans and returns, fine calculation, and reporting.",
+      "category": "Product Engineering",
+      "image": null,
+      "stack": [
+        "Web application",
+        "SQL"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Library-Management-System-LMS"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "ai-banker-python",
+      "name": "AI Banker (Python)",
+      "description": "Banking chatbot backend with OpenAI integration, conversation history, and context-aware responses.",
+      "category": "AI & Automation",
+      "image": null,
+      "stack": [
+        "Python",
+        "Flask",
+        "OpenAI API"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/AiBankerPython"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "rfq-saas-application",
+      "name": "RFQ SaaS Application",
+      "description": "RFQ management system for issuing vendor quotations, with authenticated vendor and approval-committee profiles.",
+      "category": "Product Engineering",
+      "image": null,
+      "stack": [
+        "MERN"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/SAAS-Bussiness-Application-FRONTEND"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "3-tier-ci/cd-with-docker-and-jenkins",
+      "name": "3-Tier CI/CD with Docker & Jenkins",
+      "description": "Build, test, and deployment pipeline for a three-tier application with Jenkins, Docker, and Kubernetes.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-jenkins.webp",
+      "stack": [
+        "Jenkins",
+        "Docker",
+        "Kubernetes"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/3-Tier-Application-CI-CD-with-Docker-Jenkins"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "3-tier-ci/cd-with-github-actions",
+      "name": "3-Tier CI/CD with GitHub Actions",
+      "description": "GitHub Actions pipeline for deploying a MERN application to AWS EC2 behind an Application Load Balancer.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-github-actions.webp",
+      "stack": [
+        "GitHub Actions",
+        "AWS EC2",
+        "MERN"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/3-Tier-Application-CICD-with-Github-Actions"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "3-tier-deployment-with-kubernetes",
+      "name": "3-Tier Deployment with Kubernetes",
+      "description": "MERN deployment to Kubernetes using Docker, ECR, and a load balancer.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-kubernetes.webp",
+      "stack": [
+        "Kubernetes",
+        "Docker",
+        "AWS ECR"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/3-Tier-Application-Deployment-with-Kubernetes"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "kubernetes-with-argocd-gitops",
+      "name": "Kubernetes with ArgoCD (GitOps)",
+      "description": "GitOps-based MERN deployment to Kubernetes using ArgoCD and automated scaling.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-argocd.webp",
+      "stack": [
+        "ArgoCD",
+        "Kubernetes",
+        "GitOps"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Application-Deploy-on-Kubernetes-with-ArgoCD"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "multi-stage-infrastructure-with-terraform",
+      "name": "Multi-stage infrastructure with Terraform",
+      "description": "Development, staging, and production AWS infrastructure provisioned with Terraform, S3, EC2, and DynamoDB.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-terraform.webp",
+      "stack": [
+        "Terraform",
+        "AWS EC2",
+        "S3",
+        "DynamoDB"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Multi-Stage-Deployment-with-Terraform"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "serverless-crud-on-aws-lambda",
+      "name": "Serverless CRUD on AWS Lambda",
+      "description": "Serverless CRUD API using AWS Lambda, Node.js, and DynamoDB.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-serverless.webp",
+      "stack": [
+        "AWS Lambda",
+        "Node.js",
+        "DynamoDB"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Serverless-Application-Using-AWS-Lambda-DynamoDB"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "node.js-on-aws-rds-with-s3-and-jenkins",
+      "name": "Node.js on AWS RDS with S3 and Jenkins",
+      "description": "CI/CD pipeline for Node.js using Jenkins, Docker, AWS RDS, and EC2.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-aws-rds.webp",
+      "stack": [
+        "Node.js",
+        "Jenkins",
+        "AWS RDS",
+        "Docker"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Nodejs-AWS-CRUD-App-with-RDS-S3-and-Jenkins-Pipelines"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "3-tier-ci/cd-with-gitlab",
+      "name": "3-Tier CI/CD with GitLab",
+      "description": "GitLab CI pipeline for end-to-end MERN deployment to AWS EC2.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-gitlab.webp",
+      "stack": [
+        "GitLab CI",
+        "AWS EC2",
+        "MERN"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/3-Tier-CICD-using-Gitlab"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    },
+    {
+      "id": "reddit-clone-on-kubernetes",
+      "name": "Reddit clone on Kubernetes",
+      "description": "React Reddit clone deployed with declarative Kubernetes configuration.",
+      "category": "Infrastructure & Delivery",
+      "image": "/images/work/devops-reddit-k8s.webp",
+      "stack": [
+        "React",
+        "Kubernetes"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Redit-Clone-Deployment-with-Kubernetes"
+        }
+      ],
+      "featured": false,
+      "linkNote": null
+    }
+  ],
+  "contentNotes": [
+    "Source: user-supplied project list; links are not live-verified.",
+    "CV and LinkedIn PDFs were not attached in this chat; local Codex must inspect them and reconcile profile details.",
+    "Do not fabricate metrics, testimonials, clients, employment history, or contact details.",
+    "Add MeetFlow AI, AURA, Cyrenium, and other newer work only after verifying against local evidence."
+  ]
+}

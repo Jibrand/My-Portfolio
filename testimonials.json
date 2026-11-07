@@ -1,0 +1,134 @@
+{
+  "imageBasePath": "/images/testimonials",
+  "fallbackImage": "/images/testimonials/default-avatar.svg",
+  "testimonials": [
+    {
+      "id": "craig",
+      "name": "Craig Ellrod",
+      "role": "Founder at HACKERverse",
+      "company": "",
+      "quote": "Jibran brought our HACKERverse platform to life with remarkable precision. His full-stack & DevOps expertise meant zero downtime deployments. A rare engineer who thinks like a founder!",
+      "image": "craig.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": true,
+      "attribution": "verified"
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "role": "Founder at Plutio",
+      "company": "",
+      "quote": "Jibran built our core platform at Plutio with speed and quality I rarely see. His GenAI integrations gave us a real competitive edge, full stack, DevOps, and AI all in one!",
+      "image": "leo.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "confirm-full-name"
+    },
+    {
+      "id": "seun",
+      "name": "Seun",
+      "role": "Founder at SalesGuard",
+      "company": "",
+      "quote": "Jibran is the developer every startup dreams of. He delivered SalesGuard's backend ahead of schedule with clean code and solid security practices baked in from the start.",
+      "image": "seun.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "confirm-full-name"
+    },
+    {
+      "id": "omar",
+      "name": "Omar Gonzalez",
+      "role": "Founder at Ocorp AI",
+      "company": "",
+      "quote": "Jibran's Gen AI expertise was exactly what Ocorp AI needed. He seamlessly integrated LLM pipelines and handled the full DevOps lifecycle, from CI/CD to cloud infrastructure.",
+      "image": "omar.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "verified"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/muhammad-jibran220/"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Jibrand"
+    },
+    {
+      "platform": "X",
+      "url": "https://x.com/jibrandevm"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/jibrandev890/"
+    }
+  ],
+  "additionalTestimonials": [
+    {
+      "id": "mariana",
+      "name": "Mariana Padilla",
+      "role": "CEO of HACKERverse",
+      "company": "",
+      "quote": "From day one Jibran understood our vision for HACKERverse. He delivered a scalable, secure AWS architecture that handled our rapid growth effortlessly. Highly skilled!",
+      "image": "mariana.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "verified"
+    },
+    {
+      "id": "gopal",
+      "name": "Gopal Dutt",
+      "role": "Founder at Alchemist",
+      "company": "",
+      "quote": "Working with this Engineer was an absolute pleasure! They delivered an exceptional website in record time with excellent communication. Highly recommended!",
+      "image": "gopal.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "verified"
+    },
+    {
+      "id": "adriano",
+      "name": "Adriano Meza",
+      "role": "CEO at BEEQUEENCOIN",
+      "company": "",
+      "quote": "Fast, efficient, and incredibly talented! Exceeded all my expectations with swift delivery and top-notch web development skills. Looking forward to the next project!",
+      "image": "adriano.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "verified"
+    },
+    {
+      "id": "aziz",
+      "name": "Aziz-ur Rehman",
+      "role": "Head of Digital D and I, Apps4free Ltd",
+      "company": "",
+      "quote": "Exceptional results at lightning speed! Top niche skills in web development and clear communication set them apart. A true gem in Tech!",
+      "image": "aziz.webp",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "verified"
+    },
+    {
+      "id": "idress",
+      "name": "Idress",
+      "role": "CEO at Zayna",
+      "company": "",
+      "quote": "Jibran transformed our vision at Zayna into a polished, production-ready product. His secure coding practices and modern approach gave us confidence from day one.",
+      "image": "",
+      "profileUrl": "",
+      "project": "",
+      "featured": false,
+      "attribution": "confirm-full-name"
+    }
+  ]
+}
