@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --neon: #a2dfff;
-  --neon-glow: rgb(130 207 255 / .22);
+  --neon: #ffffff;
+  --neon-glow: rgb(255 255 255 / .22);
   color-scheme: dark;
   --paper: #050505;
   --ink: #f8f8f7;
@@ -22,8 +22,8 @@
 }
 
 :root[data-theme="light"] {
-  --neon: #87c8ee;
-  --neon-glow: rgb(116 195 246 / .2);
+  --neon: #dadada;
+  --neon-glow: rgb(120 120 120 / .16);
   color-scheme: light;
   --paper: #f4f3f0;
   --ink: #101012;
