@@ -39,6 +39,325 @@
   ],
   "projects": [
     {
+      "id": "meetflow-ai",
+      "name": "MeetFlow AI",
+      "description": "Meeting intelligence with transcripts, summaries, decision memory, and follow-up tracking.",
+      "category": "AI & Automation",
+      "classification": "SaaS",
+      "projectType": "Meeting intelligence platform",
+      "overview": "MeetFlow brings meeting records and project follow-through into a shared workspace. Decision reconciliation identifies relationships such as revisions and conflicts, while project boards organize work that comes out of meetings.",
+      "features": [
+        "Meeting recordings, transcripts, and summaries",
+        "Decision reconciliation and conflict detection",
+        "Action-item tracking and project task boards"
+      ],
+      "image": "/projects/meetflow-ai.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+        "OpenAI"
+      ],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://meetflow.35-93-185-232.sslip.io/decisions"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/MeetFlow-8x"
+        }
+      ],
+      "featured": true,
+      "demoCredentials": {
+        "username": "test@gmail.com",
+        "password": "password!@123"
+      }
+    },
+    {
+      "id": "honesti-ai",
+      "name": "Honesti AI",
+      "description": "A kitchen companion prototype with household onboarding, pantry organization, and guided cooking screens.",
+      "category": "AI & Automation",
+      "classification": "AI/GenAI",
+      "projectType": "Kitchen companion prototype",
+      "overview": "Honesti explores how household preferences and ingredients could inform cooking recommendations. The public frontend includes chat examples, household and pantry views, a cookbook, and a guided cooking interface.",
+      "features": [
+        "Household and kitchen onboarding",
+        "Pantry and cookbook interfaces",
+        "Sample chat and guided cooking screens"
+      ],
+      "image": "/projects/honesti-ai.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Express"
+      ],
+      "links": [
+        {
+          "label": "Create account",
+          "href": "https://honestiai.vercel.app/onboarding"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Honesti-AI"
+        }
+      ],
+      "featured": true,
+      "demoNote": "Create your own account on the Honesti AI onboarding page to try the demo."
+    },
+    {
+      "id": "ai-receptionist-os",
+      "name": "AI Receptionist OS",
+      "description": "A multi-tenant platform for organizing business voice agents and receptionist workflows.",
+      "category": "AI & Automation",
+      "classification": "AI/GenAI",
+      "projectType": "Multi-tenant voice platform",
+      "overview": "The dashboard separates platform administration, company management, and business workspaces. The backend includes a telephony and conversation pipeline with Twilio, Deepgram, and OpenAI integrations.",
+      "features": [
+        "Platform, company, and business dashboards",
+        "Call log and recording interfaces",
+        "Telephony and streaming conversation services"
+      ],
+      "image": "/projects/ai-receptionist-os.webp",
+      "illustration": true,
+      "stack": [
+        "React",
+        "Vite",
+        "Express",
+        "MongoDB",
+        "Twilio",
+        "Deepgram",
+        "OpenAI"
+      ],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://ai-receptionalist-multi-tenant.vercel.app/admin/login"
+        }
+      ],
+      "featured": true,
+      "repositoryNote": "Private repository",
+      "demoCredentials": {
+        "username": "admin@mycompany.com",
+        "password": "admin123"
+      }
+    },
+    {
+      "id": "fbr-digital-invoicing",
+      "name": "FBR Digital Invoicing",
+      "description": "A digital invoicing platform for law firms and businesses in Pakistan.",
+      "category": "Product Engineering",
+      "classification": "Business Systems",
+      "projectType": "Client web application",
+      "overview": "A law-firm invoicing workspace with client and buyer records, invoice management, and FBR submission workflows. The public deployment opens at sign-in.",
+      "features": [
+        "Client and buyer management",
+        "Batch invoice import and PDF previews",
+        "FBR connection and invoice workflows"
+      ],
+      "image": "/projects/fbr-digital-invoicing.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Express",
+        "MongoDB",
+        "Zod"
+      ],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://fbr-digital-inovice.vercel.app/dashboard"
+        }
+      ],
+      "featured": true,
+      "repositoryNote": "Private repository",
+      "demoCredentials": {
+        "username": "admin",
+        "password": "AdminPassword123!"
+      }
+    },
+    {
+      "id": "linkedin-comment-ai",
+      "name": "LinkedIn Comment AI",
+      "description": "A Chrome extension that drafts contextual comments for LinkedIn posts.",
+      "category": "AI & Automation",
+      "classification": "AI/GenAI",
+      "projectType": "Browser extension",
+      "overview": "The extension reads the current post context and sends it to an Express backend for AI-assisted draft generation. Its popup also surfaces the user’s comment history.",
+      "features": [
+        "Contextual comment drafts",
+        "Chrome extension popup",
+        "Comment history and usage statistics"
+      ],
+      "image": "/projects/linkedin-comment-ai.webp",
+      "illustration": true,
+      "stack": [
+        "Chrome Extensions",
+        "JavaScript",
+        "Express",
+        "MongoDB",
+        "OpenAI"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/LinkedIn-Comment-AI"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "habib-print-pack",
+      "name": "Habib Print Pack",
+      "description": "A public website for a packaging manufacturer and offset printing company.",
+      "category": "Product Engineering",
+      "classification": "Business Systems",
+      "projectType": "Company website",
+      "overview": "The website presents Habib Print Pack’s printing and packaging business and helps customers learn what the company does.",
+      "features": [
+        "Public business website",
+        "Printing and packaging service information"
+      ],
+      "image": "/projects/habib-print-pack.webp",
+      "stack": [],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://habib-print-pack.vercel.app/"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "cronstrue",
+      "name": "cRonstrue",
+      "description": "A merged fix for out-of-range nth-weekday values in a cron-expression library.",
+      "category": "Product Engineering",
+      "classification": "Open Source",
+      "projectType": "Upstream contribution",
+      "overview": "cRonstrue turns cron expressions into readable schedules. My upstream contribution corrected validation for nth-weekday values outside the supported range.",
+      "features": [
+        "Merged upstream pull request #429",
+        "Validation for out-of-range nth weekdays"
+      ],
+      "image": "/projects/cronstrue.webp",
+      "illustration": true,
+      "stack": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/cRonstrue"
+        },
+        {
+          "label": "Merged pull request",
+          "href": "https://github.com/bradymholt/cRonstrue/pull/429"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "tam-pos",
+      "name": "TAM POS",
+      "description": "A wholesale point-of-sale system built for my family’s day-to-day retail operations.",
+      "category": "Product Engineering",
+      "classification": "Business Systems",
+      "projectType": "Family business application",
+      "overview": "A wholesale POS for my family’s business, covering sales, purchasing, inventory, and accounts. The operational interface requires a password.",
+      "features": [
+        "Sales and purchase records",
+        "Product, stock, and inventory management",
+        "Party ledgers and reporting"
+      ],
+      "image": "/projects/tam-pos.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Express",
+        "MongoDB",
+        "Recharts"
+      ],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://tam-pos.vercel.app/"
+        }
+      ],
+      "featured": false,
+      "repositoryNote": "Private repository",
+      "demoCredentials": {
+        "password": "123"
+      }
+    },
+    {
+      "id": "expense-tracker",
+      "name": "Expense Tracker",
+      "description": "A personal app for tracking income, expenses, and a running balance.",
+      "category": "Product Engineering",
+      "classification": "Full-Stack",
+      "projectType": "Personal finance application",
+      "overview": "The dashboard calculates cash in, cash out, and running balance from transaction records. Separate views support transaction history, categories, and spending statistics.",
+      "features": [
+        "Income and expense tracking",
+        "Running balance and transaction history",
+        "Category and statistics views"
+      ],
+      "image": "/projects/expense-tracker.webp",
+      "stack": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Zustand",
+        "Recharts"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Expense_Tracker"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "biladi-coffee",
+      "name": "Biladi Coffee Command Center",
+      "description": "A coffee shop dashboard prototype for sales, inventory, finance, and reputation reporting.",
+      "category": "Product Engineering",
+      "classification": "Business Systems",
+      "projectType": "Operations dashboard prototype",
+      "overview": "The dashboard brings operating views into one workspace. The checked-in sales and inventory views use sample data, so the project is presented as an interface prototype.",
+      "features": [
+        "Sales and performance charts",
+        "Inventory and operations views",
+        "Finance and reputation sections"
+      ],
+      "image": "/projects/biladi-coffee.webp",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Recharts"
+      ],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://biladi-coffee-all-in-one-dashbaordd.vercel.app/"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Jibrand/Biladi-Coffee-All-in-one-Dashbaord"
+        }
+      ],
+      "featured": false
+    },
+    {
       "id": "inboxhr",
       "name": "InboxHR",
       "description": "HR management platform with an AI chatbot trained on company policy, onboarding automation, bulk CSV import, Zoho integration, and analytics dashboards.",
@@ -573,319 +892,6 @@
       ],
       "featured": false,
       "linkNote": null
-    },
-    {
-      "id": "linkedin-comment-ai",
-      "name": "LinkedIn Comment AI",
-      "description": "A Chrome extension that drafts contextual comments for LinkedIn posts.",
-      "category": "AI & Automation",
-      "classification": "AI/GenAI",
-      "projectType": "Browser extension",
-      "overview": "The extension reads the current post context and sends it to an Express backend for AI-assisted draft generation. Its popup also surfaces the user’s comment history.",
-      "features": [
-        "Contextual comment drafts",
-        "Chrome extension popup",
-        "Comment history and usage statistics"
-      ],
-      "image": "/projects/linkedin-comment-ai.webp",
-      "illustration": true,
-      "stack": [
-        "Chrome Extensions",
-        "JavaScript",
-        "Express",
-        "MongoDB",
-        "OpenAI"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "href": "https://github.com/Jibrand/LinkedIn-Comment-AI"
-        }
-      ],
-      "featured": false
-    },
-    {
-      "id": "fbr-digital-invoicing",
-      "name": "FBR Digital Invoicing",
-      "description": "A digital invoicing platform for law firms and businesses in Pakistan.",
-      "category": "Product Engineering",
-      "classification": "Business Systems",
-      "projectType": "Client web application",
-      "overview": "A law-firm invoicing workspace with client and buyer records, invoice management, and FBR submission workflows. The public deployment opens at sign-in.",
-      "features": [
-        "Client and buyer management",
-        "Batch invoice import and PDF previews",
-        "FBR connection and invoice workflows"
-      ],
-      "image": "/projects/fbr-digital-invoicing.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Vite",
-        "Express",
-        "MongoDB",
-        "Zod"
-      ],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://fbr-digital-inovice.vercel.app/login"
-        }
-      ],
-      "featured": true,
-      "demoAccess": true,
-      "repositoryNote": "Private repository"
-    },
-    {
-      "id": "meetflow-ai",
-      "name": "MeetFlow AI",
-      "description": "Meeting intelligence with transcripts, summaries, decision memory, and follow-up tracking.",
-      "category": "AI & Automation",
-      "classification": "SaaS",
-      "projectType": "Meeting intelligence platform",
-      "overview": "MeetFlow brings meeting records and project follow-through into a shared workspace. Decision reconciliation identifies relationships such as revisions and conflicts, while project boards organize work that comes out of meetings.",
-      "features": [
-        "Meeting recordings, transcripts, and summaries",
-        "Decision reconciliation and conflict detection",
-        "Action-item tracking and project task boards"
-      ],
-      "image": "/projects/meetflow-ai.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Vite",
-        "TypeScript",
-        "Express",
-        "PostgreSQL",
-        "Prisma",
-        "OpenAI"
-      ],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://meetflow.35-93-185-232.sslip.io/decisions"
-        },
-        {
-          "label": "GitHub",
-          "href": "https://github.com/Jibrand/MeetFlow-8x"
-        }
-      ],
-      "featured": true,
-      "demoAccess": true
-    },
-    {
-      "id": "habib-print-pack",
-      "name": "Habib Print Pack",
-      "description": "A public website for a packaging manufacturer and offset printing company.",
-      "category": "Product Engineering",
-      "classification": "Business Systems",
-      "projectType": "Company website",
-      "overview": "The website presents Habib Print Pack’s printing and packaging business and helps customers learn what the company does.",
-      "features": [
-        "Public business website",
-        "Printing and packaging service information"
-      ],
-      "image": "/projects/habib-print-pack.webp",
-      "illustration": true,
-      "stack": [],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://habib-print-pack.vercel.app/"
-        }
-      ],
-      "featured": false
-    },
-    {
-      "id": "cronstrue",
-      "name": "cRonstrue",
-      "description": "A merged fix for out-of-range nth-weekday values in a cron-expression library.",
-      "category": "Product Engineering",
-      "classification": "Open Source",
-      "projectType": "Upstream contribution",
-      "overview": "cRonstrue turns cron expressions into readable schedules. My upstream contribution corrected validation for nth-weekday values outside the supported range.",
-      "features": [
-        "Merged upstream pull request #429",
-        "Validation for out-of-range nth weekdays"
-      ],
-      "image": "/projects/cronstrue.webp",
-      "illustration": true,
-      "stack": [
-        "TypeScript",
-        "JavaScript"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "href": "https://github.com/Jibrand/cRonstrue"
-        },
-        {
-          "label": "Merged pull request",
-          "href": "https://github.com/bradymholt/cRonstrue/pull/429"
-        }
-      ],
-      "featured": false
-    },
-    {
-      "id": "tam-pos",
-      "name": "TAM POS",
-      "description": "A wholesale point-of-sale system built for my family’s day-to-day retail operations.",
-      "category": "Product Engineering",
-      "classification": "Business Systems",
-      "projectType": "Family business application",
-      "overview": "A wholesale POS for my family’s business, covering sales, purchasing, inventory, and accounts. The operational interface requires a password.",
-      "features": [
-        "Sales and purchase records",
-        "Product, stock, and inventory management",
-        "Party ledgers and reporting"
-      ],
-      "image": "/projects/tam-pos.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Vite",
-        "Express",
-        "MongoDB",
-        "Recharts"
-      ],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://tam-pos.vercel.app/"
-        }
-      ],
-      "featured": false,
-      "demoAccess": true,
-      "repositoryNote": "Private repository"
-    },
-    {
-      "id": "honesti-ai",
-      "name": "Honesti AI",
-      "description": "A kitchen companion prototype with household onboarding, pantry organization, and guided cooking screens.",
-      "category": "AI & Automation",
-      "classification": "AI/GenAI",
-      "projectType": "Kitchen companion prototype",
-      "overview": "Honesti explores how household preferences and ingredients could inform cooking recommendations. The public frontend includes chat examples, household and pantry views, a cookbook, and a guided cooking interface.",
-      "features": [
-        "Household and kitchen onboarding",
-        "Pantry and cookbook interfaces",
-        "Sample chat and guided cooking screens"
-      ],
-      "image": "/projects/honesti-ai.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Vite",
-        "Tailwind CSS",
-        "Express"
-      ],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://honestiai.vercel.app/onboarding"
-        },
-        {
-          "label": "GitHub",
-          "href": "https://github.com/Jibrand/Honesti-AI"
-        }
-      ],
-      "featured": true
-    },
-    {
-      "id": "expense-tracker",
-      "name": "Expense Tracker",
-      "description": "A personal app for tracking income, expenses, and a running balance.",
-      "category": "Product Engineering",
-      "classification": "Full-Stack",
-      "projectType": "Personal finance application",
-      "overview": "The dashboard calculates cash in, cash out, and running balance from transaction records. Separate views support transaction history, categories, and spending statistics.",
-      "features": [
-        "Income and expense tracking",
-        "Running balance and transaction history",
-        "Category and statistics views"
-      ],
-      "image": "/projects/expense-tracker.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Express",
-        "MongoDB",
-        "Zustand",
-        "Recharts"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "href": "https://github.com/Jibrand/Expense_Tracker"
-        }
-      ],
-      "featured": false
-    },
-    {
-      "id": "ai-receptionist-os",
-      "name": "AI Receptionist OS",
-      "description": "A multi-tenant platform for organizing business voice agents and receptionist workflows.",
-      "category": "AI & Automation",
-      "classification": "AI/GenAI",
-      "projectType": "Multi-tenant voice platform",
-      "overview": "The dashboard separates platform administration, company management, and business workspaces. The backend includes a telephony and conversation pipeline with Twilio, Deepgram, and OpenAI integrations.",
-      "features": [
-        "Platform, company, and business dashboards",
-        "Call log and recording interfaces",
-        "Telephony and streaming conversation services"
-      ],
-      "image": "/projects/ai-receptionist-os.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Vite",
-        "Express",
-        "MongoDB",
-        "Twilio",
-        "Deepgram",
-        "OpenAI"
-      ],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://ai-receptionalist-multi-tenant.vercel.app/"
-        }
-      ],
-      "featured": true,
-      "repositoryNote": "Private repository"
-    },
-    {
-      "id": "biladi-coffee",
-      "name": "Biladi Coffee Command Center",
-      "description": "A coffee shop dashboard prototype for sales, inventory, finance, and reputation reporting.",
-      "category": "Product Engineering",
-      "classification": "Business Systems",
-      "projectType": "Operations dashboard prototype",
-      "overview": "The dashboard brings operating views into one workspace. The checked-in sales and inventory views use sample data, so the project is presented as an interface prototype.",
-      "features": [
-        "Sales and performance charts",
-        "Inventory and operations views",
-        "Finance and reputation sections"
-      ],
-      "image": "/projects/biladi-coffee.webp",
-      "illustration": true,
-      "stack": [
-        "React",
-        "Vite",
-        "Tailwind CSS",
-        "Recharts"
-      ],
-      "links": [
-        {
-          "label": "Live Demo",
-          "href": "https://biladi-coffee-all-in-one-dashbaordd.vercel.app/"
-        },
-        {
-          "label": "GitHub",
-          "href": "https://github.com/Jibrand/Biladi-Coffee-All-in-one-Dashbaord"
-        }
-      ],
-      "featured": false
     }
   ],
   "contentNotes": [

@@ -5,6 +5,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import type { Project } from "@/lib/portfolio";
 import { Spotlight } from "./effects";
+import { DemoAccess } from "./projects/demo-access";
 
 const featuredArt = {
   inboxhr: Workflow,
@@ -59,6 +60,8 @@ export function ProjectCard({ project, lead = false }: { project: Project; lead?
         <h3><Link href={href}>{project.name}</Link></h3>
         <p>{project.description}</p>
         <ul className="tags" aria-label="Technologies">{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
+        {project.demoCredentials && <DemoAccess name={project.name} credentials={project.demoCredentials} />}
+        {project.demoNote && <p className="demo-note">{project.demoNote}</p>}
         <div className="project-actions">
           <Link className="project-action" href={href}>Project details<ArrowUpRight size={15} aria-hidden="true" /></Link>
           <ProjectLinks project={project} />

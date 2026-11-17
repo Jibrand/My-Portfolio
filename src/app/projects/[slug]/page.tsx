@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { profile, projects } from "@/lib/portfolio";
+import { projects } from "@/lib/portfolio";
+import { DemoAccess } from "../demo-access";
 import { ProjectArt } from "../../project-card";
 import { articles } from "@/lib/articles";
 import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
@@ -50,16 +51,14 @@ export default async function ProjectPage({ params }: Props) {
             ))}
           </div>
         )}
+        {project.demoCredentials && <DemoAccess name={project.name} credentials={project.demoCredentials} />}
+        {project.demoNote && <p className="detail-note">{project.demoNote}</p>}
         {project.repositoryNote && <p className="detail-note">{project.repositoryNote}</p>}
         {project.overview && <section className="related-reading article-body" aria-labelledby="project-overview-title">
           <h2 id="project-overview-title">Project overview</h2>
           <p>{project.projectType}</p>
           <p>{project.overview}</p>
           {!!project.features?.length && <ul aria-label="Key features">{project.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>}
-        </section>}
-        {project.demoAccess && <section className="article-author article-body" aria-labelledby="demo-access-title">
-          <h2 id="demo-access-title">Demo Access</h2>
-          <a className="button secondary" href={`mailto:${profile.email}?subject=${encodeURIComponent(`Demo access request: ${project.name}`)}`}>Request Demo Access</a>
         </section>}
         {!project.links.length && project.linkNote?.startsWith("Private repository") && <p className="detail-note">{project.linkNote}</p>}
         {relatedArticles.length > 0 && <section className="related-reading" aria-labelledby="related-reading-title">

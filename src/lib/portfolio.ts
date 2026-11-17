@@ -23,7 +23,6 @@ export const featured = catalog.featuredProjectIds.flatMap((id) =>
 );
 
 export const experience = [
-  { company: "Future Frame Solution", role: "Founder", dates: "Apr 2024 – Present", location: "United States", summary: "Lead architecture, development, and deployment of AI voice receptionists, follow-up workflows, appointment automation, and custom agents." },
   { company: "SalesGuard", role: "Technical Lead & AI Automation Engineer", dates: "Nov 2025 – Mar 2026", location: "London, UK · Remote", summary: "Co-founded the startup through YC Startup School and owned its technical architecture, product development, and AI automation for sales workflows." },
   { company: "Plutio", role: "AI Automation Engineer", dates: "Oct 2025 – Nov 2025", location: "United Kingdom · Remote", summary: "Built a voice command system for the Electron desktop app, connecting Whisper transcription and AI intent parsing to actions like invoicing, messaging, and task assignment." },
   { company: "HACKERverse®", role: "Lead Full-Stack & GenAI Engineer", dates: "Mar 2024 – Oct 2025", location: "California, US · Remote", summary: "Led engineering for a cybersecurity competition platform. Built competition APIs, managed AWS infrastructure and CI/CD, and automated vendor workflows with AI." },

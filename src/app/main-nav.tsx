@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const items = [
-  { id: "work", label: "Work" },
+  { id: "projects", label: "Projects", href: "/projects/" },
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
-  { id: "blog", label: "Blog" },
+  { id: "blog", label: "Blog", href: "/blog/" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -19,7 +19,8 @@ export function MainNav() {
 
   useEffect(() => {
     if (pathname !== "/") return;
-    const sections = items.flatMap(({ id }) => {
+    const sections = items.flatMap(({ id, href }) => {
+      if (href) return [];
       const target = document.getElementById(id);
       return target ? [target] : [];
     });
@@ -34,12 +35,11 @@ export function MainNav() {
 
   return (
     <nav className="main-nav" aria-label="Main navigation">
-      {items.map(({ id, label }) => {
-        const archive = (id === "work" && (pathname === "/projects" || pathname.startsWith("/projects/")))
-          || (id === "blog" && pathname.startsWith("/blog"));
-        const current = archive ? "page" : pathname === "/" && section === id ? "location" : undefined;
+      {items.map(({ id, label, href }) => {
+        const activeRoute = href && (pathname === href.slice(0, -1) || pathname.startsWith(href));
+        const current = activeRoute ? "page" : pathname === "/" && section === id ? "location" : undefined;
 
-        return <Link key={id} href={id === "blog" ? "/blog/" : `/#${id}`} aria-current={current} className={id === "experience" ? "nav-experience" : undefined}>{label}</Link>;
+        return <Link key={id} href={href ?? `/#${id}`} aria-current={current} className={id === "experience" ? "nav-experience" : undefined}>{label}</Link>;
       })}
     </nav>
   );
