@@ -350,6 +350,8 @@ h1 em, h2 em { font-style: normal; color: var(--muted); background: var(--chrome
 .related-reading { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
 .related-reading ul { display: grid; gap: .75rem; }
 .related-reading a { text-decoration: underline; text-underline-offset: .2em; }
+.archive-classification { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; margin-top: 1rem; color: var(--muted); font-size: .85rem; }
+.archive-classification select { min-height: 44px; padding-inline: .7rem; border: 1px solid var(--line); border-radius: .62rem; background: var(--panel); color: var(--ink); }
 @media (max-width: 1000px) {
   .article-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }

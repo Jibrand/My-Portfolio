@@ -22,7 +22,7 @@ export function ProjectArt({ project }: { project: Project }) {
   return (
     <div className={`project-art ${image ? "project-art-image" : ""} visual-${project.number % 3}`} aria-hidden={image ? undefined : true}>
       {image ? (
-        <Image src={image} alt={`${project.name} project preview`} fill sizes="(max-width: 740px) 100vw, (max-width: 1100px) 50vw, 650px" />
+        <Image src={image} alt={`${project.name} project ${project.illustration ? "illustration" : "preview"}`} fill sizes="(max-width: 740px) 100vw, (max-width: 1100px) 50vw, 650px" />
       ) : (
         <>
           <span className="art-index">MJ / {String(project.number).padStart(2, "0")}</span>
@@ -55,7 +55,7 @@ export function ProjectCard({ project, lead = false }: { project: Project; lead?
         <span className="cover-arrow"><ArrowUpRight size={21} aria-hidden="true" /></span>
       </Link>
       <div className="project-copy">
-        <div className="project-meta eyebrow"><span>{project.category}</span>{lead && <span className="lead-label">Featured project</span>}</div>
+        <div className="project-meta eyebrow"><span>{project.classification ?? project.category}</span>{lead && <span className="lead-label">Featured project</span>}</div>
         <h3><Link href={href}>{project.name}</Link></h3>
         <p>{project.description}</p>
         <ul className="tags" aria-label="Technologies">{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>

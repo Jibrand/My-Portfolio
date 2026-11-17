@@ -16,7 +16,8 @@ export default function ProjectsPage() {
   const entries = projects.map((project) => ({
     id: project.id,
     category: project.category,
-    search: [project.name, project.description, project.category, ...project.stack].join(" ").toLowerCase(),
+    classification: project.classification,
+    search: [project.name, project.description, project.category, project.classification, project.projectType, ...project.stack].join(" ").toLowerCase(),
     card: <ProjectCard project={project} />,
   }));
 

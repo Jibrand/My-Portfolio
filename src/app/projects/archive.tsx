@@ -11,15 +11,19 @@ const categories = [
   { key: "infrastructure", label: "Infrastructure & Delivery" },
 ];
 
-type Entry = { id: string; category: string; search: string; card: ReactNode };
+type Entry = { id: string; category: string; classification?: string; search: string; card: ReactNode };
 
 export function Archive({ entries }: { entries: Entry[] }) {
   const params = useSearchParams();
   const query = params.get("q") ?? "";
   const active = categories.find(({ key }) => key === params.get("category")) ?? categories[0];
+  const classifications = [...new Set(entries.flatMap(({ classification }) => classification ? [classification] : []))].sort();
+  const classification = classifications.find((value) => value === params.get("classification")) ?? "";
   const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  const filtered = entries.filter(({ category, search }) =>
-    (active.key === "all" || category === active.label) && terms.every((term) => search.includes(term)),
+  const filtered = entries.filter((entry) =>
+    (active.key === "all" || entry.category === active.label)
+    && (!classification || entry.classification === classification)
+    && terms.every((term) => entry.search.includes(term)),
   );
 
   function update(key: string, value: string) {
@@ -43,6 +47,13 @@ export function Archive({ entries }: { entries: Entry[] }) {
             <button key={key} type="button" className="button secondary" aria-pressed={active.key === key} onClick={() => update("category", key === "all" ? "" : key)}>{label}</button>
           ))}
         </div>
+        <label className="archive-classification">
+          <span>Project classification</span>
+          <select value={classification} onChange={(event) => update("classification", event.target.value)}>
+            <option value="">All classifications</option>
+            {classifications.map((value) => <option key={value}>{value}</option>)}
+          </select>
+        </label>
       </div>
       <section aria-labelledby="results-heading">
         <h2 id="results-heading" className="eyebrow result-count" aria-live="polite">{filtered.length} {filtered.length === 1 ? "project" : "projects"}</h2>
