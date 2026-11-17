@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }: Props) {
             </section>}
             <aside className="article-author" aria-label="About the author">
               <h2>About Muhammad Jibran</h2>
-              <p>Product engineer and full-stack & AI engineer building SaaS applications, voice AI workflows, and cloud infrastructure. Experience includes SalesGuard, Plutio, and HACKERverse.</p>
+              <p>Full-stack engineer and product engineer building SaaS applications, voice AI workflows, and cloud infrastructure. Experience includes SalesGuard, Plutio, and HACKERverse.</p>
               <Link href={`/#${article.experienceAnchor}`}>Explore my engineering experience and skills →</Link>
             </aside>
             <section aria-labelledby="related-work-title">

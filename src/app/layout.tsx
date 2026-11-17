@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   authors: [{ name: profile.name, url: new URL("/#about", profile.site).href }],
   creator: profile.name,
-  icons: { apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }] },
+  icons: {
+    icon: { url: "/favicon.ico?v=2", sizes: "any", type: "image/x-icon" },
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   category: "Software engineering",
   robots: {
     index: true,

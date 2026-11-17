@@ -7,8 +7,8 @@ import { breadcrumbSchema, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "../structured-data";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Projects | Muhammad Jibran — Full-Stack & AI Engineer",
-  description: "Explore Muhammad Jibran’s projects across AI automation, product engineering, and cloud infrastructure.",
+  title: "Full-Stack & Product Engineering Projects | Muhammad Jibran",
+  description: "Explore Muhammad Jibran’s full-stack and product engineering projects across SaaS, AI automation, and cloud infrastructure.",
   path: "/projects/",
 });
 

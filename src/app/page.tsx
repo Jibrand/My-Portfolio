@@ -45,7 +45,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow hero-intro">Muhammad Jibran <span>/</span> Product Engineer & AI Engineer</p>
+          <p className="eyebrow hero-intro">{profile.name} <span>/</span> {profile.headline}</p>
           <h1 id="hero-title">Ideas into<br /><em>working products.</em></h1>
           <p className="hero-description">I’m a full-stack product engineer building SaaS applications, voice AI, and workflow automation, from the first technical decision to production.</p>
           <div className="actions">

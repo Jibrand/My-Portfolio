@@ -3,7 +3,7 @@ import catalog from "../../portfolio-data.json";
 export const profile = {
   name: catalog.profile.name,
   location: catalog.profile.location,
-  headline: "Full-Stack & AI Engineer | Product Engineer",
+  headline: "Full-Stack Engineer & Product Engineer",
   experienceYears: "5+",
   summary: catalog.profile.summary,
   education: catalog.profile.education,

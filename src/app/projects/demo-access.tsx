@@ -29,11 +29,11 @@ export function DemoAccess({ name, credentials }: {
         <div className="demo-field" key={label}>
           <span><span className="demo-label">{label}</span><code>{value}</code></span>
           <button type="button" onClick={() => copy(label, value)} aria-label={`Copy ${name} demo ${label.toLowerCase()}`}>
-            {feedback?.field === label && feedback.copied ? <Check size={17} aria-hidden="true" /> : <Copy size={17} aria-hidden="true" />}
+            {feedback?.field === label && feedback.copied ? <Check size={13} aria-hidden="true" /> : <Copy size={13} aria-hidden="true" />}
           </button>
         </div>
       ))}
-      <p className="demo-feedback" role="status">
+      <p className={feedback && !feedback.copied ? "demo-feedback" : "sr-only"} role="status">
         {feedback && (feedback.copied ? `${feedback.field} copied.` : `Could not copy. Select the ${feedback.field.toLowerCase()} to copy it manually.`)}
       </p>
     </div>

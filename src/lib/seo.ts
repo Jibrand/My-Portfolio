@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { profile } from "./portfolio";
 
-export const homeTitle = "Muhammad Jibran | Full-Stack & AI Engineer";
-export const homeDescription = "Muhammad Jibran is a Full-Stack and AI Engineer in Pakistan with 5+ years of experience building SaaS platforms, AI agents, and automation systems.";
+export const homeTitle = `${profile.name} | ${profile.headline}`;
+export const homeDescription = "Muhammad Jibran is a full-stack engineer and product engineer in Pakistan with 5+ years of experience building SaaS, AI agents, and workflow automation.";
 export const socialImage = {
   url: "/opengraph-image.png",
   width: 1200,
   height: 630,
-  alt: "Muhammad Jibran — Full-Stack & AI Engineer and Product Engineer",
+  alt: homeTitle,
 };
 
 export function pageMetadata({ title, description, path }: { title: string; description: string; path: string }): Metadata {
