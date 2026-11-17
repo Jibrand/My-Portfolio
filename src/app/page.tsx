@@ -47,7 +47,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow hero-intro">{profile.name} <span>/</span> {profile.headline}</p>
           <h1 id="hero-title">Ideas into<br /><em>working products.</em></h1>
-          <p className="hero-description">I’m a full-stack product engineer building SaaS applications, voice AI, and workflow automation, from the first technical decision to production.</p>
+          <p className="hero-description">I’m a full stack developer and product engineer building SaaS applications, voice AI, and workflow automation, from the first technical decision to production.</p>
           <div className="actions">
             <Link className="button primary" href="/#work">Explore my work <ArrowDown size={17} aria-hidden="true" /></Link>
             <a className="button secondary" href={`mailto:${profile.email}`}>Get in touch <ArrowUpRight size={17} aria-hidden="true" /></a>

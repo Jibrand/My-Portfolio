@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { profile } from "./portfolio";
 
 export const homeTitle = `${profile.name} | ${profile.headline}`;
-export const homeDescription = "Muhammad Jibran is a full-stack engineer and product engineer in Pakistan with 5+ years of experience building SaaS, AI agents, and workflow automation.";
+export const homeDescription = "Muhammad Jibran is a full stack developer and product engineer in Pakistan with 5+ years of experience building SaaS, AI agents, and workflow automation.";
 export const socialImage = {
   url: "/opengraph-image.png",
   width: 1200,

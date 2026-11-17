@@ -17,7 +17,7 @@ const image = new ImageResponse(
   ),
   h("div", { style: { display: "flex", flexDirection: "column" } },
     h("div", { style: { display: "flex", fontSize: 88, fontWeight: 700, letterSpacing: -5, lineHeight: 1.05 } }, "Muhammad Jibran"),
-    h("div", { style: { display: "flex", marginTop: 25, fontSize: 38, color: "#dedede", letterSpacing: -1 } }, "Full-Stack Engineer & Product Engineer"),
+    h("div", { style: { display: "flex", marginTop: 25, fontSize: 38, color: "#dedede", letterSpacing: -1 } }, "Full Stack Developer & Product Engineer"),
     h("div", { style: { display: "flex", marginTop: 20, fontSize: 24, color: "#a8a8a8" } }, "SaaS platforms. AI agents. Useful software."),
   ),
   h("div", { style: { display: "flex", borderTop: "2px solid #aaa", paddingTop: 20, fontSize: 21, color: "#bcbcbc" } }, "muhammadjibran.netlify.app"),
